@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+	*{
+	margin:0;
+    padding: 0;
+     box-sizing:border-box;
+-moz-box-sizing:border-box;  /*Firefox */
+-webkit-box-sizing:border-box; /* Safari */
+	}
+	li{
+  list-style-type: none;
+}
+/*清除浮动*/
+.clearfix:after{content: "";display: block;clear: both;}
+.clearfix{zoom:1;}
+/*清除浮动*/
+.comWidth{margin-left:auto; margin-right:auto;}
+	body{
+		background-image: url(dengLuImg/beiJing.png);
+	}
+	.wrap{
+		width: 100%;
+	}
+	.zhanshi{
+		position: relative;
+        margin-top: 15%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 950px;
+        height: 360px;
+        background-image: url(dengLuImg/c4.png);
+	}
+	.wrap2{
+       position: absolute;
+       left: 630px;
+       top: 100px;
+           
+	}
+	.li1,.li2{
+
+		font-size: 30px;
+        color: white;
+	}
+    .li1{
+    	margin-bottom: 15px;
+    }
+    .li2{
+    	letter-spacing: 10px;
+    }
+    .inp{
+    	width: 165px;
+    	height: 38px;
+    }
+	.bt{
+		margin-top: 30px;
+	}
+	.login{
+		display: inline-block;
+		float: left;
+		padding-left: 20px;
+	}
+	.regist{
+		display: inline-block;
+		float: left;
+		padding-left: 30px;
+	}
+	.bt1,.bt2{	
+	float: left;
+	width: 100px;
+	height: 35px;
+	background-color:#03a5e9;
+	color: white;
+	font-size: 20px;
+    }
+    
+	</style>
+</head>
+<body>
+   <div class="wrap">
+   	  <div class="zhanshi">
+   	  	<div class="wrap2">
+   	  		<div class="user">
+		   	 	<ul>
+		   	 		<li class="li1">用户名：<input type="text" name="" class="inp"></li>
+		   	 		<li class="li2">密码：<input type="password" name="" class="inp"></li>
+		   	 	</ul>
+		   	 </div>
+		   	 <div class="bt">
+			   	 	<div class="login">
+			   	 	    <input type="button" value="登录" class="bt1" onclick="">
+			   	    </div>
+				   	 <div class="regist">
+				   	 	    <input type="button" value="注册" class="bt2" onclick="">
+				   	 </div>
+		   	 </div>
+   	  	</div>
+   	  </div>  	  
+   </div>
+</body>
+</html>

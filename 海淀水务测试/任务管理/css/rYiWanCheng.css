@@ -1,0 +1,102 @@
+.down-wrap{
+	margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 817px;
+    height: 643px;
+    border: 1px solid #c1c1c1;
+    border-radius: 6px;
+    background: white;
+    padding-top: 20px;
+}
+.xinxi02-xianshi{
+    margin-left: 182px;
+    margin-top: 43px;
+    height: 550px;
+    font-size: 21px;
+}
+.xinxi02-h{
+    height: 52px;  
+}
+.xinxi02-media{
+    margin-left: 106px;
+    margin-top: -24px;
+    padding-left: 12px;
+    width: 354px;
+    height: 242px;
+    border: 1px solid black;
+}
+.rtupian{
+    position: relative;
+}
+.r-tupian{
+    display: block; 
+     padding-top: 5px;
+     padding-bottom: 5px;
+}
+.rImg{
+    margin-right: 10px;
+    width: 55px;
+    height: 65px;
+    cursor: pointer;
+}
+.rImg4{
+    position: absolute;
+    left: 331px;
+    top: -405px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 11;
+}
+.rImg2{ 
+    position: absolute;  
+    left: -13px;
+    top: -359px;
+    width: 300px;
+    height: 499px; 
+    z-index: 11;
+}
+.rImg3{
+    position: absolute;
+    left: -303px;
+    top: -418px;
+    width: 819px;
+    height: 705px;
+    background: black;
+    opacity: 0.8;
+    z-index: 10;
+}
+.r-shipin{
+    height: 50px;
+    color: black;
+}
+.r-shipin:hover{
+    color: #c81623;
+}
+
+.xinxi02-h{
+    height: 52px;  
+}
+.xinxi02-media{
+    margin-left: 106px;
+    margin-top: -24px;
+    width: 354px;
+    height: 242px;
+    border: 1px solid black;
+   
+}
+.xinxi03-h{
+   padding-top: 20px;
+    height: 52px;  
+}
+.zz-bt{
+    margin:30px 182px;
+     width: 90px;
+     height:  40px;
+     color: white;
+     text-align: center;
+     line-height: 40px;
+     background:   #356adb;
+     border-radius: 6px;
+}

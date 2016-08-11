@@ -1,0 +1,171 @@
+@charset "gb2312";
+/* CSS Document */
+*
+{
+	padding:0;
+	margin:0;
+	font-size:13px;
+	list-style:none;
+}
+#box
+{
+	overflow:hidden;
+	height:605px;
+	margin:2px auto;
+}
+#left
+{
+	float:left;
+	width:87%;
+	height:98%;
+	border:1px solid #333;
+}
+#left #logo
+{
+	margin:0 auto;
+	overflow:hidden;
+	width:99%;
+	height:33px;
+	border-bottom:1px solid #CCC;
+}
+#left #logo .a
+{
+	float:left;
+}
+#left #logo img
+{
+	border:0;	
+}
+#left #logo span
+{
+	float:right;
+	margin-right:100px;
+	display:inline;
+	height:33px;
+	line-height:33px;
+}
+#left #dis
+{
+	overflow:hidden;
+	width:100%;
+	height:540px;
+	text-align:center;
+	font-size:100px;
+	color:#F00;
+	cursor:url(images/down.cur);
+}
+#left #dis img
+{
+	display:block;
+	margin:0 auto;
+}
+#left #note
+{
+	width:100%;
+	height:20px;
+	overflow:hidden;
+}
+#left #note ul
+{
+	position:relative;
+	width:100%;
+	height:20px;
+}
+#left #note ul li
+{
+	position:absolute;
+	top:0;
+	width:100px;
+	height:100%;
+	line-height:15px;
+	padding-left:20px;
+}
+#left #note ul .l1
+{
+	left:0;	
+}
+#left #note ul .l2
+{
+	width:150px;
+	position:relative;
+	margin:0 auto;
+	font-weight:600;
+}
+#left #note ul .l3
+{
+	right:0;
+	overflow:hidden;
+	width:200px;
+	background:url(images/bu_01.gif) no-repeat 0px -2px;
+}
+#left #note ul .l3 div
+{
+	float:left;
+	width:100px;
+}
+#left #note ul .l3 a
+{
+	float:left;
+	width:60px;
+	margin-left:2px;
+	display:inline;
+	padding-left:20px;
+	background:url(images/bu_02.gif) no-repeat;	
+}
+#right
+{
+	margin-left:8px;
+	float:left;
+	width:117px;
+	height:590px;
+}
+#up
+{
+	margin:0 auto;
+	cursor:pointer;
+	width:110px;
+	height:25px;
+	background:url(images/bu.gif) no-repeat 0 -111px;
+}
+#up:hover
+{
+	background:url(images/bu.gif) no-repeat 0 -163px;
+}
+#show
+{
+	position:relative;
+	width:117px;
+	height:540px;
+	overflow:hidden;
+}
+#goShow
+{
+	position:absolute;
+	width:117px;	
+}
+#goShow div
+{
+	margin:20px auto;
+	width:108px;
+	height:108px;
+	border:1px solid #999;
+	cursor:pointer;
+	overflow:hidden;
+}
+#goShow img
+{
+	display:block;
+	margin:0 auto;
+}
+#down
+{
+	margin:0 auto;
+	cursor:pointer;
+	width:110px;
+	height:25px;
+	background:url(images/bu.gif) no-repeat 0 -189px;
+}
+#down:hover
+{
+	background:url(images/bu.gif) no-repeat 0 -241px;
+}

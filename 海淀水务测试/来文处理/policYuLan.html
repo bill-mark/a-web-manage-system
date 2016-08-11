@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>政策法规预览</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"  /> 
+	<link rel="stylesheet" type="text/css" href="css/yuLan.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		//定义图片标题数组
+    		var arrImg = [];
+    		//获取父页面数据 新闻标题 新闻内容 图片标题 图片路径
+    		var policTitle = parent.$("#policTitle").val();
+    	
+    		
+    		varrImg = parent.$("#imgtable td input[type='text']").each(function(){
+    			arrImg.push($(this).val());
+    		});
+    		
+    		//预览数据赋值
+    		$("#div1").html(policTitle);
+    		parent.$("#imgDIv img").each(function(e){
+	    		$("#div2").append("<p style='align:center;'><img src='"+$(this).attr('src')+"'></img></p>");
+	    		$("#div2").append("<span>"+arrImg[e]+"</span>");
+			});
+			
+
+    		
+
+    	});
+    	function closeJbox(){
+			parent.$.jBox.close(true);
+    	}
+    </script>
+</head>
+<body>
+	
+		<div class="yuLancenter">
+			<div class="reportContainer" style="border:1px solid #ccc;">
+				<div id="div1" class="div1"></div>
+				<div id="div2" class="div2"></div>
+				<div id="div3" class="div3">
+					<p class="pInfo"></p>
+				</div>
+				<div class="div4">
+					<button id="btnClose" class="btn btn-info" onclick="closeJbox()" type="button">
+						<i class="fa fa-reply"></i>&nbsp;&nbsp;返　回
+					</button>
+				</div>
+			</div>
+		</div>
+		
+</body>
+</html>

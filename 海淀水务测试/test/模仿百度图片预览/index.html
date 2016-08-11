@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>模仿百度相册</title>
+<link href="index.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body onload="init()">
+<div id="box">
+<div id="left">
+	<p id="logo">
+    	<a href="#" class="a"><img src="images/logo.jpg" /></a>
+        <span>图片来自:<a href="#" id="imgFrom" target="_blank">http://www</a></span>
+   </p>
+   <div id="dis" title="下一张"><img title="" src=""/></div>
+   <div id="note">
+   		<ul>
+        	<li class="l1"><a href="#">相关网页</a></li>
+            <li class="l2"><span id="infoPic">没连上网络</span></li>
+            <li class="l3"><div>预览图比例:<span id="imgPercent"></span>%</div><a href="#" id="viewPic" target="_blank">查看原图</a></li>
+        </ul>
+   </div>
+</div>
+<div id="right">
+	<div id="up"></div>
+    <div id="show">
+    	<div id="goShow"><script>
+				var imgCount=16,timer=null;
+				for(var i=1;i<=imgCount;i++)
+				{
+					document.write("<div onclick='bgChange(this);'></div>");
+				}
+				(function(i){
+						if(i>imgCount)return;
+						var t=arguments.callee;
+						var error=false;
+						var img=new Image();
+						img.src="images/"+i+".jpg";
+						img.onerror=function(){error=true};
+						(function(){
+						if(img.complete||error)
+						{
+						var ow=img.width,oh=img.height;
+						if(img.width>img.height){img.width=100;
+						img.height=img.width*oh/ow;}
+						else{img.height=100;
+						img.width=img.height*ow/oh;}
+						var o=document.getElementById("goShow").getElementsByTagName("div")[i-1].appendChild(img);
+						o.style.marginTop=(o.parentNode.offsetHeight-o.height)/2+'px';
+						i++;
+						return t(i);
+						}
+						setTimeout(arguments.callee,100);
+			            })()
+							})(1)
+        </script></div>
+    </div>
+    <div id="down"></div>
+</div>
+</div>
+<script language="javascript" type="text/javascript" src="index.js">
+</script>
+</body>
+</html>

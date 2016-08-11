@@ -1,0 +1,81 @@
+.qj-rd-top{
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 70px;
+    border-bottom: 1px solid #becded;
+}
+.qj-rd-top1 {
+    float: left;
+    margin-right: 35px;
+    margin-top: 15px;
+    width: 87px;
+    height: 35px;
+    color: white;
+    font-size: 19px;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    background: #54d0d1;
+}
+.qj-rd-down{
+    margin-top: 21px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 708px;
+    height: 536px;
+    background: white;
+    border: 1px solid #c9c9c9;
+    border-radius: 6px;
+    padding-top: 20px;
+}
+.qj-rd-down1{
+    position: relative;
+    margin-left: 155px;
+    margin-top: 100px;
+}
+.qj-icon-rili{
+    position: absolute;
+    z-index: 5;
+    left: 205px;
+    top: 3px;
+    width: 16px;
+    height: 16px;
+    background: url(../paiBanImg/chaxun-rili.png) no-repeat;
+    cursor: pointer;
+}
+.qj-icon-rili2{
+    position: absolute;
+    z-index: 5;
+    left: 383px;
+    top: 3px;
+    width: 16px;
+    height: 16px;
+    background: url(../paiBanImg/chaxun-rili.png) no-repeat;
+    cursor: pointer;
+}
+.qj-rd-down2{
+    margin-left: 187px;
+}
+.qj-down2-beizhu{
+    display: inline-block;
+    padding-top: 100px;
+}
+.qj-down2-input{
+    margin-top: 18px;
+    width: 330px;
+    height: 180px;
+}
+.qj-down-shenqing{
+    margin-left: 320px;
+    margin-top:40px;
+    width: 100px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    color: white;
+    background: #356adb;
+    border-radius: 8px;
+    cursor: pointer;
+}

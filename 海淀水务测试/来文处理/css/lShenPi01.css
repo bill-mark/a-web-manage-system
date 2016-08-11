@@ -1,0 +1,107 @@
+.shenpi-wrap{
+	margin-top: 93px;
+	margin-left: 110px;
+	width: 818px;
+	height: 552px;
+	background: white;
+    border: 2px solid #c9c9c9;
+    border-radius: 5px;
+}
+.first-land{
+	padding-top: 41px;
+	padding-bottom: 10px;	
+}
+.xinxi-riqi{	
+	float: left;
+	margin-left: 41px;
+}
+.xinxi-input{
+	width: 140px;
+	height: 21px;
+}
+.xinxi-leixing{	
+	float: left;
+	margin-left: 40px;
+	width: 259px;
+}
+.xinxi-select{
+	width: 166px;
+	height: 25px;
+	margin-top: -2px;
+}
+.xinxi-chaxun{
+	margin-left: 708px;
+	margin-top: -10px;
+	width: 89px;
+	height: 40px;
+	color: #f2f2f2;
+	background: #54d184;
+	text-align: center;
+	line-height: 40px;
+	overflow: hidden;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 21px;
+}
+
+.second-land{
+	margin-left: 40px;
+	margin-right: 18px;
+	font-size: 21px;
+}
+.xinxi-renwu{	
+	padding-left: 31px;
+	padding-top: 14px;
+	border-bottom: 1px solid #acadb0;
+	background: url(../laiWenImg/xinxi-jiantou.png) no-repeat 1px 19px;
+}
+.xinxi-renwu a{
+	color: black;
+}
+.xinxi-time{
+	display: inline-block;
+	float: right;
+}
+
+.fen-ye{
+	margin-left: 623px;
+	margin-top: 42px;
+}
+.fenye-anniu{
+	display: inline-block;
+	float: left;
+	width: 62px;
+	height: 26px;
+	color: white;
+	font-size: 14px;
+	background: #668ee4;
+	text-align: center;
+	line-height: 26px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.fenye-shangye{
+	display: inline-block;
+	float: left;
+	margin-left: 5px;
+	margin-top: -4px;
+	width: 12px;
+	height:26px;
+	
+	/*padding-bottom: 10px;*/
+	background: url(../laiWenImg/fenye.png) no-repeat 3px 5px;
+	cursor: pointer;
+	/*overflow: hidden;*/
+}
+.fenye-xiaye{
+	display: inline-block;
+	float: left;
+	margin-top: -4px;
+	margin-right: 5px;
+	width: 28px;
+	height:26px;
+	
+	/*top: 8px;*/
+	background: url(../laiWenImg/fenye.png) no-repeat -9px 5px;
+	cursor: pointer;
+}

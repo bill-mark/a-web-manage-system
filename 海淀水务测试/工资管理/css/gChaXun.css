@@ -1,0 +1,42 @@
+.an-niu{	
+	width: 87px;
+	height: 38px;
+	color: white;
+	font-size: 19px;
+	text-align: center;
+	line-height: 38px;
+	border-radius: 6px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.dao-ru{
+	margin-left: 60px;
+	margin-top: 18px;
+	background: #54d0d1;
+}
+.cha-xun{
+	margin-left: 60px;
+	margin-top: 18px;
+	margin-right: 35px;
+	border-top: 2px solid #becded;
+}
+.chaxun-left{
+	position: relative;
+	/*float: left;*/
+	padding-top: 23px;
+}
+.icon-rili{
+	position: absolute;
+	z-index: 5;
+	left: 173px;
+	top: 26px;
+	width: 16px;
+	height: 16px;
+	background: url(gongZiImg/chaxun-rili.png) no-repeat;
+	cursor: pointer;
+}
+.chaxun-right{
+	float: right;
+	margin-top: -30px;
+	background: #54d184;
+}

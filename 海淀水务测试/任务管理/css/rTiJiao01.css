@@ -1,0 +1,105 @@
+.right-down{
+	border-top: 1px solid #ecedf2;
+}
+.down-wrap{
+	margin-top: 91px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 817px;
+    height: 552px;  
+    font-size: 21px;
+    padding-top: 20px;
+}
+.first-land{
+	margin-top: 15px;
+	height: 50px;
+	font-size: 21px;
+}
+.xinxi-riqi{
+	position: relative;
+	float: left;
+	margin-left: 30px;
+	/*width: 214px;*/	
+}
+.xinxi-input{
+	width:146px;
+	height: 21px;
+}
+.xinxi-rili{
+    position: absolute;
+    left: 173px;
+    top: 8px;
+    width: 17px;
+    height: 17px;
+    background: url(../renWuImg/rili-icon.png);
+    cursor: pointer;
+}
+.xinxi-leixing{	
+	float: left;
+	margin-left: 45px;
+	width: 259px;
+}
+.xinxi-select{
+	width: 166px;
+	height: 25px;
+	 appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    /* background: url("../renWuImg/xiaLa.png") no-repeat scroll right center transparent; */
+    background: url("../renWuImg/xiaLa02.png") no-repeat 143px;
+    padding-right: 14px;
+    select: :-ms-expand { display: none; };
+}
+.xinxi-chaxun{
+	float: right;
+	margin-right: 38px;
+	width: 89px;
+	height: 40px;
+	color: #f2f2f2;
+	background: #54d184;
+	text-align: center;
+	line-height: 40px;
+	overflow: hidden;
+	border-radius: 6px;
+	cursor: pointer;
+}
+.second-land{
+	margin-left: 30px;
+	margin-right: 41px;
+}
+.xinxi-renwu{	
+	padding-left: 31px;
+	padding-top: 14px;
+	border-bottom: 1px dotted black;
+	background: url(../renWuImg/xinxi-jiantou.png) no-repeat 1px 20px;
+}
+.xinxi-renwu a{
+	color: black;
+}
+.xinxi-time{
+	display: inline-block;
+	float: right;
+}
+.tianjia-zhuangtai{
+	padding-left: 36px;
+	height: 41px;
+	background: #e6e6e6;
+	border-top: 3px solid #becded;
+}
+.zt{
+	float: left;
+	
+	width: 90px;
+	height: 40px;
+	color: white;
+	text-align: center;
+	line-height: 40px;
+	font-size: 21px;
+	border-radius: 7px 7px 0 0;	
+}
+.zt01{
+	background: #769fcd;
+}
+.zt02{
+	background: #b9d7ea; 
+}

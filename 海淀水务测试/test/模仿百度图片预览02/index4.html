@@ -1,0 +1,194 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>广告代码 jquery+css图片缩放放大预览特效</title>
+</head>
+<style type="text/css">
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+body{font:12px/180% Arial, Helvetica, sans-serif, "新宋体";background:#111111;}
+/* col */
+#col{width:630px;margin:50px auto 0 auto;}
+#col .thumb{padding:10px 0 10px 10px;}
+#pg{position:relative;height:335px;background:#111;}
+#pg li{width:200px;height:104px;position:relative;overflow:hidden;float:left;margin:0 5px 10px 0;z-index:2;opacity:0.3;filter:alpha(opacity=30);cursor:pointer;}
+#pg li.active{opacity:1;filter:alpha(opacity=100);}
+#pg li.selected{opacity:1;filter:alpha(opacity=100);z-index:99;-moz-box-shadow:0px 0px 10px #fff;-webkit-box-shadow:0px 0px 10px #fff;}
+#pg li img{display:block;width:100%;}
+#pg li p{color:#333;padding:0 0 0 10px;height:30px;line-height:30px;font-size:12px;background:#fff;}
+</style>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+// <![CDATA[
+(function($) {
+	$.fn.jphotogrid = function(settings, callback) {
+		settings = $.extend(true, {
+			activeClass: 'active',
+			selectedClass: 'selected',
+			baseCSS: {},
+			selectedCSS: {}
+		}, settings);
+
+		var url = settings.flickrbase + settings.feedapi + '?';
+		var first = true;
+		
+		//Convert floats to absolute
+		function toAbsolute(el){
+			$(el).children().each(function(){
+				var pos = $(this).position();
+				$(this).data('ptop',Math.floor(Number(pos.top)) + 'px');
+				$(this).data('pleft',Math.floor(Number(pos.left)) + 'px');
+			}).each(function(){
+				placeOriginal(this);
+			});
+		}
+		
+		function placeOriginal(el, animate, callback){
+			var dtop = $(el).data('ptop');
+			var dleft = $(el).data('pleft');
+			var props = $.extend({
+				top: dtop,
+				left: dleft
+			}, settings.baseCSS);
+			if(animate){
+				$(el).animate(props, 'slow', function(){
+					if($.isFunction(callback)) callback();
+				});
+			}
+			else{
+				$(el).css($.extend(props, {position: 'absolute'}));
+			}
+		}
+		
+		function hideSelected(callback){
+			$container.find('.' + settings.selectedClass).each(function(){
+				$(this).removeClass(settings.selectedClass);
+				placeOriginal(this, true);
+			});
+			if($.isFunction(callback)) callback();
+		}
+		
+		function select(el){
+			hideSelected(function(){
+				$(el).addClass('selected').removeClass('active');
+				$(el).animate(settings.selectedCSS, 'slow');
+			});
+		}
+
+		for(var key in settings.qstrings){
+			if(!first)
+				url += '&';
+			url += key + '=' + settings.qstrings[key];
+			first = false;
+		}
+
+		return $(this).each(function(){
+			$container = $(this);
+			$(this).css('position','relative');
+			toAbsolute(this);
+			
+			$(this).children()
+				.css('cursor', 'pointer')
+				.hover(function(){
+					if(!$(this).hasClass(settings.selectedClass))
+						$(this).addClass(settings.activeClass);
+				},function(){
+					$(this).removeClass(settings.activeClass);
+				});
+			$('.' + settings.activeClass).live('click', function(){				
+				select(this);
+			});
+			$('.' + settings.selectedClass).live('click', function(){
+				hideSelected();
+			});
+			
+			$(this).find('div')
+				.hover(function(){
+					$(this).css('opacity', 0);
+				},function(){
+					$(this).css('opacity', 0.5);
+				})
+				.click(function(){
+					$(this).css('opacity', 1);
+					$li = $(this).parent();
+					$li.css("z-index", 99);
+					$li.animate({
+						top: 0,
+						left: 0,
+						width: '100%',
+						height: '400px'
+					}, 'slow');
+				});
+			});
+	}
+})(jQuery);
+
+$(document).ready(function(){
+	
+	$('#pg').jphotogrid({
+		baseCSS: {
+			width: '200px',
+			height: '104px',
+			padding: '0px'
+		},
+		selectedCSS: {
+			top: '50px',
+			left: '100px',
+			width: '360px',
+			height: '197px',
+			padding: '20px'
+		}
+	});
+		
+});
+</script>
+
+
+<body>
+
+<div id="col">
+	<ul id="pg" class="thumb">
+		<li>
+			<img src="images/main_image1.jpg" alt="images1" />
+			<p>17素材网址：<a href="http://www.17sucai.com/">http://www.17sucai.com/</a></p>
+		</li>
+		<li>
+			<img src="images/main_image2.jpg" alt="images2" />
+			<p>17素材网址：<a href="http://www.17sucai.com/">http://www.17sucai.com/</a></p>
+		</li>
+		<li>
+			<img src="images/main_image3.jpg" alt="images3" />
+			<p>17素材网址：<a href="http://www.17sucai.com/">http://www.17sucai.com/</a></p>
+		</li>
+		<li>
+			<img src="images/main_image4.jpg" alt="images4" />
+			<p>17素材网址：<a href="http://www.17sucai.com/">http://www.17sucai.com/</a></p>
+		</li>
+		<li>
+			<img src="images/main_image5.jpg" alt="images5" />
+			<p>17素材网址：<a href="http://www.17sucai.com/">http://www.17sucai.com/</a></p>
+		</li>
+		<li>
+			<img src="images/main_image6.jpg" alt="images6" />
+			<p>17素材网址：<a href="http://www.17sucai.com/">http://www.17sucai.com/</a></p>
+		</li>
+		<li>
+			<img src="images/main_image7.jpg" alt="images7" />
+			<p>17素材网址：<a href="http://www.17sucai.com/">http://www.17sucai.com/</a></p>
+		</li>
+		<li>
+			<img src="images/main_image8.jpg" alt="images8" />
+			<p>17素材网址：<a href="http://www.17sucai.com/">http://www.17sucai.com/</a></p>
+		</li>
+		<li>
+			<img src="images/main_image9.jpg" alt="images9" />
+			<p>17素材网址：<a href="http://www.17sucai.com/">http://www.17sucai.com/</a></p>
+		</li>
+	</ul>
+</div>
+    
+</body>
+</html>

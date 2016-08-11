@@ -1,0 +1,79 @@
+.down-wrap{
+	margin-top: 91px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 817px;
+    height: 552px;
+    border: 1px solid #c1c1c1;
+    border-radius: 6px;
+    background: white;
+    padding-top: 20px;
+}
+.xinxi1{
+
+	margin-left: 185px;
+	margin-top: 44px;
+}
+
+.select1{
+	width: 170px;
+    appearance:none;
+	  -moz-appearance:none;
+	  -webkit-appearance:none;
+    /*background: url("../renWuImg/xiaLa.png") no-repeat scroll right center transparent;*/
+    background: url("../renWuImg/xiaLa.png") no-repeat 151px;
+    padding-right: 14px;
+    /*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+    select::-ms-expand { display: none; }
+
+}
+.xinxi2{
+	position: relative;
+	margin-left: 185px;
+	margin-top: 26px;
+}
+.icon-rili1{
+    position: absolute;
+    left: 221px;
+    top: 2px;
+    width: 17px;
+    height: 17px;
+    background: url(../renWuImg/rili-icon.png);
+    cursor: pointer;
+}
+.icon-rili2{
+    position: absolute;
+    left: 416px;
+    top: 2px;
+    width: 17px;
+    height: 17px;
+    background: url(../renWuImg/rili-icon.png);
+    cursor: pointer;
+}
+.input1{
+	width: 170px;
+}
+.input2{
+	width: 357px;
+}
+.xinxi-shijian{
+    display: inline-block;
+    position: absolute;
+
+}
+.input3{
+    margin-left: 70px;
+	width: 357px;
+	height: 176px;
+}
+.chuang-jian{
+	margin:55px auto;
+	width: 88px;
+	height: 40px;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 40px;
+	color: white;
+	background: #356adb;
+	cursor: pointer;
+}

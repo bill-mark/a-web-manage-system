@@ -1,0 +1,53 @@
+
+p{
+	margin: 0;
+}
+.pInfo{
+	text-indent: 2em;
+	font-family: SimSun,Verdana, Geneva, sans-serif;
+	line-height: 25px;
+	width: 90%;
+	margin: 0 auto;
+}
+.div1{
+	position: relative;
+	width: 90%;
+	height: 24px;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #F0F0F0;
+	font-weight: bold;
+	font-size: 17px;
+	letter-spacing: 2px;
+	top: 7px;
+	font-family: SimSun,Verdana, Geneva, sans-serif;
+}
+.div2{
+	width: 40%;
+	height:auto;
+	margin: 0 auto;
+}
+.div3{
+	margin-top: 10px;
+	height:auto;
+}
+.div4{
+	text-align: center;
+	margin-bottom: 12px;
+}
+.yuLancenter{
+	width: 100%;
+	border-radius: 10px;
+	background-color: white;
+	margin: 0 auto;
+}
+.reportContainer{
+	width: 70%;
+	margin: 0 auto;
+}
+.reportContainer div span{
+	display: block;
+	text-align: center;
+	width: 300px;
+}
+

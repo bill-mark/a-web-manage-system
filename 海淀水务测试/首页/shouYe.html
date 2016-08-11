@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="shouYe.css">
+  <link rel="stylesheet" type="text/css" href="caiDan.css">
+  <link type="text/css" rel="stylesheet" href="css/kalendar.css" />
+  <script type="text/javascript" src="js/jquery.min.js"></script> 
+  <script type="text/javascript" src="js/kalendar.js"></script>
+  <script type="text/javascript" src="shouYe.js"></script>
+</head>
+<body>
+  <div class="wrap">
+  	<div class="wrap2">
+  		<div class="left" id="left">		
+  				<div class="left-logo"> 				    
+  				    <div class="log1">
+  				    	<img id="" src="caiDanImg/touxiang.png"> 
+  				    </div>				    
+  					<div class="log2">
+  						<span id="">欢迎副队长</span>
+  					</div>
+  				</div>  			   
+  			    	<ul class="nav-ul" id="navUl">
+  			    		<li class="li-left"  >                  
+                   <div class="out-li1" id="menu1">
+  			    		    <span class="icon"><img src="caiDanImg/paiban.png"></span>
+  			    		    <span class="li-word" onclick="showmenu('1')">排班管理</span>                  
+  			    		    <span class="jian-tou"><</span>
+                   </div> 
+                    <ul id="list1" style="display:none">
+                      <li ><div class="in-li"><a href="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp排班安排</a></div></li>
+                      <li ><div class="in-li"><a href="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp排班查看</a></div></li>
+                      <li ><div class="in-li"><a href="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp排班修改</a></div></li>
+                      <li ><div class="in-li"><a href="">&nbsp&nbsp&nbsp请销假</a></div></li>
+                    </ul>                  
+  			    		</li>
+  			    		<li class="li-left"  >
+                  
+                   <div class="out-li1" id="menu2">
+                    <span class="icon"><img src="caiDanImg/gongZi.png"></span>
+                    <span class="li-word" onclick="showmenu('2')">工资管理</span>                  
+                    <span class="jian-tou"><</span>
+                   </div> 
+                    <ul id="list2" style="display:none">
+                      <li ><div class="in-li"><a href="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp工资查询</a></div></li>
+                     
+                    </ul>
+                   
+                </li>  
+  			    		<li class="li-left"  >                  
+                   <div class="out-li1" id="menu3">
+                    <span class="icon"><img src="caiDanImg/renWu.png"></span>
+                    <span class="li-word" onclick="showmenu('3')">任务管理</span>                  
+                    <span class="jian-tou"><</span>
+                   </div> 
+                    <ul id="list3" style="display:none">
+                      <li ><div class="in-li"><a href="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp任务安排</a></div></li>
+                      <li ><div class="in-li"><a href="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp任务信息</a></div></li>
+                      <li ><div class="in-li"><a href="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp任务提交</a></div></li>
+                      <li ><div class="in-li"><a href="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp任务统计</a></div></li>
+                    </ul>                  
+                </li>
+  			    		<li class="li-left"  >                  
+                   <div class="out-li1" id="menu4">
+                    <span class="icon"><img src="caiDanImg/laiWen.png"></span>
+                    <span class="li-word" onclick="showmenu('4')">来文处理</span>                  
+                    <span class="jian-tou"><</span>
+                   </div> 
+                    <ul id="list4" style="display:none">
+                      <li ><div class="in-li"><a href="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp来文录入</a></div></li>
+                      <li ><div class="in-li"><a href="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp来文审批</a></div></li>
+                      <li ><div class="in-li"><a href="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp来文查询</a></div></li>
+                    </ul>                  
+                </li>  
+  			    		<li class="li-left"  >                  
+                   <div class="out-li3" id="menu5">
+                    <span class="icon"><img src="caiDanImg/zhiFa.png"></span>
+                    <span class="li-word" onclick="showmenu2('5')">执法队伍管理</span>                  
+                    <span class="jian-tou"><</span>
+                   </div> 
+                    <ul id="list5" style="display:none">
+                      <li ><div class="in-li"><a href="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp任务安排</a></div></li>
+                      <li ><div class="in-li"><a href="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp任务信息</a></div></li>
+                      <li ><div class="in-li"><a href="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp任务提交</a></div></li>
+                      <li ><div class="in-li"><a href="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp任务统计</a></div></li>
+                    </ul>                  
+                </li> 
+  			    	</ul>  	             		   
+  		</div>
+     
+  		<div class="right" id="right">
+  			<div class="right-up">
+         <div class="up-news">
+        				<div class="up1">
+        					<span class="up2-img"><div class="icon-number" id="iN2">2</div></span>
+        					<a href="">消息提醒</a>
+        				</div>
+        				<div class="up1">
+       					 <span class="up1-img"><div class="icon-number" id="iN1">2</div></span>
+       					 <a href="">任务通知</a>
+        				</div>
+         </div> 
+  			</div>
+  			<div class="right-down" id="rightDown">
+  				<div class="main1">
+  					<div class="main1-left">  						
+  					</div>
+  					<div class="main1-right">
+  						<div class="r1">
+  							<div class="cc c1">
+                  <img src="shouYeImg/yongHu.png">
+                  <span class="cc-number" id="cc1">20</span>
+                  <span class="cc-word">用户</span>       
+                </div>
+  							<div class="cc c2">
+                  <img src="shouYeImg/duiYuan.png">
+                  <span class="cc-number" id="cc2">50</span>
+                  <span class="cc-word">队员</span>        
+                </div>
+  						</div>
+  						<div class="r2">
+  							<div class="cc c3">
+                  <img src="shouYeImg/duiZhang.png">
+                  <span class="cc-number" id="cc3">10</span>
+                  <span class="cc-word">队长</span>       
+                </div>
+  							<div class="cc c4">
+                  <img src="shouYeImg/fangWenLiang.png">
+                  <span class="cc-number" id="cc4">60</span>
+                  <span class="cc-word">访问量</span>         
+                </div>
+  						</div>
+  					</div>
+  				</div>
+  				<div class="main2">
+  					<div class="main2-left">
+  						 <div class="m-l-1 com">
+                 队列成员
+               </div>
+               <div id="biao1" class="m-l-2 com">
+                 <img class="xiaoTouXiang" src="shouYeImg/h1.png">
+                  <div class="biao-word">
+                    <span class="duiLieMing">队列名</span>
+                    <span class="duiZhangMing">-队长名</span>
+                  </div>
+                 <img class="jinDuTiao" src="shouYeImg/jinDuTiao70.png">
+               </div>
+               <div id="biao2" class="m-l-2 com">
+                 <img class="xiaoTouXiang" src="shouYeImg/h1.png">
+                  <div class="biao-word">
+                    <span class="duiLieMing">队列名</span>
+                    <span class="duiZhangMing">-队长名</span>
+                  </div>
+                 <img class="jinDuTiao" src="shouYeImg/jinDuTiao90.png">
+               </div>
+               <div id="biao3" class="m-l-2 com">
+                 <img class="xiaoTouXiang" src="shouYeImg/h1.png">
+                  <div class="biao-word">
+                    <span class="duiLieMing">队列名</span>
+                    <span class="duiZhangMing">-队长名</span>
+                  </div>
+                 <img class="jinDuTiao" src="shouYeImg/jinDuTiao40.png">
+               </div>
+               <div id="biao4" class="m-l-2 com">
+                 <img class="xiaoTouXiang" src="shouYeImg/h1.png">
+                  <div class="biao-word">
+                    <span class="duiLieMing">队列名</span>
+                    <span class="duiZhangMing">-队长名</span>
+                  </div>
+                 <img class="jinDuTiao" src="shouYeImg/jinDuTiao20.png">
+               </div>
+               <div id="biao5" class="m-l-2 com">
+                 <img class="xiaoTouXiang" src="shouYeImg/h1.png">
+                  <div class="biao-word">
+                    <span class="duiLieMing">队列名</span>
+                    <span class="duiZhangMing">-队长名</span>
+                  </div>
+                 <img class="jinDuTiao" src="shouYeImg/jinDuTiao50.png">
+               </div>
+               <div class="m-l-3">
+                 <a href="">查看详情</a>
+               </div>
+  					</div>
+  					<div class="main2-right">
+              <span class="MR-up">排班安排</span>
+  						<div id="wrap"></div>
+              <a href="">查看详情</a>
+  					</div>
+  				</div>
+  			</div>
+  		
+      
+     </div>
+     <div class="float-clear"></div> 
+  	</div>
+  </div>
+</body>
+</html>

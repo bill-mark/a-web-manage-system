@@ -1,0 +1,64 @@
+/*清除样式*/
+*{
+    margin:0;
+    padding: 0;
+}
+a{
+	text-decoration: none;
+}
+li{
+  list-style-type: none;
+}
+/*清除浮动*/
+.clearfix:after{content: "";display: block;clear: both;}
+.clearfix{zoom:1;}
+/*清除浮动*/
+.comWidth{margin-left:auto; margin-right:auto;}
+/*IE盒子*/
+*{
+    box-sizing:border-box;
+-moz-box-sizing:border-box;  /*Firefox */
+-webkit-box-sizing:border-box; /* Safari */
+}
+
+.wrap{
+	width: 1920px;
+	height:1080px;
+	position: relative;
+	background: url(dengLuImg/cc.jpg);
+	
+}
+.user{
+	position: absolute;
+	left: 1220px;
+	top: 430px;
+	color: white;
+}
+.user li{
+	/*display: block;*/
+	padding-top: 10px;
+	width: 167px;	
+	margin-bottom: 20px;
+}
+.user li input{
+	height: 30px;	
+	line-height: 30px;
+}
+.login{
+	
+	position: absolute;
+	left: 1130px;
+	top: 575px;
+}
+.log2{
+	display: block;
+	width: 100px;
+	height: 35px;
+	background-color:#03a5e9;
+	color: white;
+}
+.regist{
+	position: absolute;
+	left: 1270px;
+	top: 575px;
+}

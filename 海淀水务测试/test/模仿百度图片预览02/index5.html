@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<title>js实现按钮控制图片360度翻转特效</title>
+<body>
+<script language="javascript">
+var b=0;
+function rotate()
+{
+	var a = document.getElementById('myimg');
+	b+=90;
+
+    a.style.transform ='rotate('+b+'deg)';
+}
+</script>
+<input type="button" value="点击旋转图片" onclick="rotate()" /><br />
+<img id="myimg" src="images/8.jpg"/>
+</body>
+</html>

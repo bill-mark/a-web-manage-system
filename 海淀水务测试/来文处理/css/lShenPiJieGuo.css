@@ -1,0 +1,37 @@
+.down-wrap{
+    margin-top: 91px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 817px;
+    height: 652px;
+    border: 1px solid #c1c1c1;
+    border-radius: 6px;
+    background: white;
+    padding-top: 110px;
+    color: #acb0b4;
+}
+.xinxi1{
+    margin-left: 185px;
+    margin-top: 26px;
+}
+.xinxi2{  
+    margin-left: 165px;
+    margin-top: 26px;
+}
+.anniu-qu{
+    margin-top: 75px;
+    margin-left: 245px;
+   
+}
+.anniu{
+    display: inline-block;
+    width: 88px;
+    height: 40px;
+    margin-right: 49px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    background: #356adb;
+    cursor: pointer;
+}

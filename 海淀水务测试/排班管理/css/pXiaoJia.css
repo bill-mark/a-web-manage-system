@@ -1,0 +1,39 @@
+.bordered {
+    border-spacing: 0;
+    /*width: 600px;*/
+    margin: 16px auto;
+    border: solid #ccc 1px;           
+} 
+.bordered td, .bordered th {
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;    
+}
+.bordered th {     
+    font-weight:normal;    
+    border-top: none;  
+    width: 70px;
+}
+
+.bordered td:first-child, .bordered th:first-child {
+    border-left: none;
+}
+
+.bg-caozuo{
+    background: url(../paiBanImg/caoZuo.png) no-repeat center;.
+    
+}
+.bg-caozuo:hover{
+    cursor: pointer;
+}
+.xj-rd-down{
+    margin:0 auto;
+    height: 34px;
+    width: 75px;
+    line-height: 34px;
+    text-align: center;
+    color: white;
+    background: #356adb;
+    border-radius: 6px;
+}

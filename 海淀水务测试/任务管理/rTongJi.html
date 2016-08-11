@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/index.css"> 
+  <link rel="stylesheet" type="text/css" href="css/rTongJi.css">
+  <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+  <div class="wrap"> 	
+  		<div class="left" id="left">    
+          <div class="left-logo">             
+              <div class="log1">
+                <img id="" src="caiDanImg/touxiang.png"> 
+              </div>            
+            <div class="log2">
+              <span id="">欢迎队员</span>
+            </div>
+          </div>           
+              <ul class="nav-ul" id="navUl">
+                <li class="li-left">          
+                   <div class="out-li1" id="menu1">
+                    <span class="li-word icon1" onclick="showmenu('1')">排班管理</span>
+                   </div> 
+                    <ul id="list1" style="display:none">
+                      <li ><div class="in-li"><a href="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp排班安排</a></div></li>
+                      <li ><div class="in-li"><a href="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp排班查看</a></div></li>
+                      <li ><div class="in-li"><a href="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp排班修改</a></div></li>
+                      <li ><div class="in-li"><a href="">&nbsp&nbsp&nbsp请销假</a></div></li>
+                    </ul>                  
+                </li>
+                <li class="li-left"  >               
+                   <div class="out-li1" id="menu2">                    
+                    <span class="li-word icon2" onclick="showmenu('2')">工资管理</span>                  
+                    
+                   </div> 
+                    <ul id="list2" style="display:none">
+                      <li ><div class="in-li"><a href="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp工资查询</a></div></li>                     
+                    </ul>                  
+                </li>  
+                <li class="li-left"  >                  
+                   <div class="out-li1" id="menu3">
+                    
+                    <span class="li-word icon3" onclick="showmenu('3')">任务管理</span>                  
+                    
+                   </div> 
+                    <ul id="list3" style="display:none">
+                      <li ><div class="in-li"><a href="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp任务安排</a></div></li>
+                      <li ><div class="in-li"><a href="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp任务信息查看</a></div></li>
+                      <li ><div class="in-li"><a href="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp任务提交</a></div></li>
+                      <li ><div class="in-li"><a href="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp任务统计</a></div></li>
+                      <li ><div class="in-li"><a href="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp任务审核</a></div></li>
+                    </ul>                  
+                </li>
+                <li class="li-left"  >                  
+                   <div class="out-li1" id="menu4">
+                    <span class="li-word icon4" onclick="showmenu('4')">来文处理</span>                           
+                   </div> 
+                    <ul id="list4" style="display:none">
+                      <li ><div class="in-li"><a href="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp来文录入</a></div></li>
+                      <li ><div class="in-li"><a href="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp来文审批</a></div></li>
+                      <li ><div class="in-li"><a href="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp来文查询</a></div></li>
+                    </ul>                  
+                </li>
+
+
+                 
+                <li class="li-left"  >                  
+                   <div class="out-li3" id="menu5">                  
+                    <span class="li-word icon5" onclick="showmenu2('5')">执法队伍管理</span>                      
+                   </div> 
+                    <ul id="list5" style="display:none">
+                      <li ><div class="in-li"><a href="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp队员添加</a></div></li>
+                      <li ><div class="in-li"><a href="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp队员信息编辑</a></div></li>
+                      <li ><div class="in-li"><a href="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp队伍添加</a></div></li>
+                      
+                    </ul>                  
+                </li> 
+              </ul>                      
+      </div>
+  		<div class="right" id="right">
+          			<div class="right-up">
+                        <img src="caiDanImg/wenZi.png" class="wenZi">
+                				<div class="up1">
+                					<span class="up2-img"><div class="icon-number" id="iN2">2</div></span>
+                					<a href="">消息提醒</a>
+                				</div>
+                				<div class="up1">
+               					 <span class="up1-img"><div class="icon-number" id="iN1">2</div></span>
+               					 <a href="">任务通知</a>
+                				</div>         
+          			</div>
+          			<div class="right-down" id="rightDown">	
+                          <div class="first-land">
+                               图标类型
+                                 <select class="xinxi-select">
+                                    <option>统计任务类型</option>
+                                 </select>
+                          </div>
+                          <div class="second-land">
+                              <div class=xinxi-riqi>
+                                   任务周期
+                                  <input class="xinxi-input" type="" name="">
+                                  <i class="xinxi-rili" onclick=""></i>
+                              </div>
+                              <div class="xinxi-leixing">
+                                 任务类型
+                                 <select class="xinxi-select">
+                                    <option></option>
+                                 </select>
+                              </div>
+                              <div class="xinxi-chaxun" onclick="">
+                                 统计
+                              </div>
+                          </div> 
+                          <div class="biaoge" id="">
+                                <div class="tj-adress">
+                                      <span class="tj-diming">地点地点1</br></span>
+                                      <span class="tj-diming">地点地点2</br></span>
+                                      <span class="tj-diming">地点地点3</br></span>
+                                      <span class="tj-diming">地点地点4</br></span>
+                                      <span class="tj-diming">地点地点5</br></span>
+                                      <span class="tj-diming">地点地点6</br></span>
+                                </div>  
+                                <canvas id="canvas01" width="600" height="200"> </canvas>
+                                <div class="tj-riqi">
+                                      <span class="tj-riqi">0</span>
+                                      <span class="tj-riqi">3</span>
+                                      <span class="tj-riqi">6</span>
+                                      <span class="tj-riqi">9</span>
+                                      <span class="tj-riqi">12</span>
+                                      <span class="tj-riqi2">15</span>
+                                      <span class="tj-riqi2">18</span>
+                                      <span class="tj-riqi2">21</span>
+                                      <span class="tj-riqi2">24</span>
+                                      <span class="tj-riqi2">27</span>
+                                      <span class="tj-riqi2">30</span>
+                                      <span class="tj-riqi2">时间(天)</span>
+                                </div>
+                                <div class='tj-biaoge-shuoming'> 
+                                         <span class="shuomingcolor01 shuoming"></span> 巡检<span class="shuomingcolor02 shuoming"></span> 执法<span class="shuomingcolor03 shuoming"></span> 日常
+                                         </br> <span class="renwuliebiao">任务列表</span>
+                                </div>
+                          </div>
+                          <table class="tj-table">
+                                 <tr >
+                                  <th class="tj-th1">序号</th>
+                                  <th class="tj-th2">地点</th>
+                                  <th class="tj-th3">事件</th>
+                                 </tr>
+                                 <tr>
+                                  <td>1</td>
+                                  <td></td>
+                                  <td></td>
+                                 </tr>
+                                 <tr>
+                                  <td>2</td>
+                                  <td></td>
+                                  <td></td>
+                                 </tr>
+                                 <tr>
+                                  <td>3</td>
+                                  <td></td>
+                                  <td></td>
+                                 </tr>
+                                 <tr>
+                                  <td>4</td>
+                                  <td></td>
+                                  <td></td>
+                                 </tr>
+                                 <tr>
+                                  <td>5</td>
+                                  <td></td>
+                                  <td></td>
+                                 </tr>
+                                 <tr>
+                                  <td>6</td>
+                                  <td></td>
+                                  <td></td>
+                                 </tr>
+                                 <tr>
+                                  <td>7</td>
+                                  <td></td>
+                                  <td></td>
+                                 </tr>
+                                 <tr>
+                                  <td>8</td>
+                                  <td></td>
+                                  <td></td>
+                                 </tr>
+                          </table> 
+                          <div class="fen-ye">
+                             <span class="fenye-anniu" id="">第一页</span>
+                             <span class="fenye-shangye"></span>
+                             <span class="fenye-xiaye"></span>
+                             <span class="fenye-anniu" id="">最后一页</span>
+                          </div>                   
+          			</div>
+  		</div>  		  	
+  </div>
+  <script type="text/javascript" src="js/rTongJi.js"></script>
+</body>
+</html>

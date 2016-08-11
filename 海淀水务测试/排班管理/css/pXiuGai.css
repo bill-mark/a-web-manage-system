@@ -1,0 +1,49 @@
+.chakan-down{
+	margin-top: 21px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 708px;
+	height: 536px;
+    border: 1px solid #c1c1c1;
+    border-radius: 6px;
+	background: white;
+	padding-top: 20px;
+}
+.biao-ge{
+	border="2";
+}
+
+.bordered {
+
+    border-spacing: 0;
+    /*width: 600px;*/
+    margin: 40px auto;
+    border: solid #ccc 1px;           
+} 
+.bordered td, .bordered th {
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;    
+}
+.bordered th {         
+    border-top: none;  
+}
+.bg-thwidth{
+    width: 100px;
+}
+.bordered td:first-child, .bordered th:first-child {
+    border-left: none;
+}
+.bg-select{
+    width: 100px;
+    font-size: 16px;
+    border: 0;
+}
+.bg-caozuo{
+    background: url(../paiBanImg/caoZuo.png) no-repeat center;.
+    
+}
+.bg-caozuo:hover{
+    cursor: pointer;
+}

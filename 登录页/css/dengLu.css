@@ -1,0 +1,64 @@
+@charset "utf-8";
+*{
+	margin:0;
+    padding: 0;
+    font-family: "微软雅黑";
+    list-style-type:none;
+}
+body{
+	background: url(../dengLuImg/beiJing.png);
+}
+.wrap{
+	position: relative;
+	margin-top: 15%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 965px;
+	height: 370px;
+	background: url(../dengLuImg/left.png) no-repeat;
+}
+.content{
+	position: absolute;
+	left: 605px;
+	top: 44px;
+	width: 335px;
+	height: 298px;
+    
+	background: url(../dengLuImg/02.png) no-repeat;
+}
+.name{
+	padding-left: 35px;
+	padding-top: 20px;
+	color: white;
+    font-size: 21px;
+}
+.yanZheng{
+	margin-left: 33px;
+	margin-top: 17px;
+	width: 186px;
+	height: 50px;
+	background: url(../dengLuImg/yanzheng01.png) no-repeat;
+}
+.change{
+	display: inline-block;
+	width: 100px;
+	height: 80px;
+	margin-left: 190px;
+	margin-top: 25px;
+	color: white;
+	cursor: pointer;
+    font-size: 21px;
+}
+.anniu{
+	display: inline-block;
+	width: 105px;
+	height: 39px;
+	margin-top: 20px;
+	margin-left: 30px;
+	text-align: center;
+	line-height: 39px;
+	border-radius: 5px;
+	background: #0984cd;
+	color: white;
+	cursor: pointer;
+}

@@ -1,0 +1,339 @@
+@charset "utf-8";
+*{
+	margin:0;
+    padding: 0;
+    font-family: "微软雅黑";
+    list-style-type:none;
+	}
+ul,li{padding:0;margin:0}；	
+li{
+  list-style-type: none;
+}
+a{
+	border:0;
+	text-decoration: none;
+}
+body{
+	background-image:url(../img/caiDanImg/beijing.jpg); 
+    background-repeat:no-repeat;background-position:center
+    }
+.left{
+	display: inline-block;
+	float: left;
+    width: 218px;		
+	background-color: #2c3e50;	
+}
+.left-logo{
+	/*margin-left: auto;
+	margin-right: auto;*/
+	margin-left: -115px;
+	padding-top: 20px;	
+}
+.log1{
+	text-align: center;
+}
+.log2{
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-align: center;
+	color: white;
+	font-size: 12px;
+	font-weight: bold;
+}
+.nav-ul{
+	display: block;
+	/*padding-left: 20px;*/
+	padding-top: 0px;	
+	/*float: right;*/
+}
+.clearfloat{clear:both;height:0;font-size: 1px;line-height: 0px;
+    background-color: #424f62;
+    height: 100%;
+}
+.li-left{ 
+    /*padding-bottom: 8px;*/
+   /* border-bottom: 1px solid #778392;*/
+    text-align: center;
+    cursor:pointer;
+}
+.gaoliang :hover{
+	background: rgb(37,52,67) url(../img/caiDanImg/jianTou1.png) no-repeat 192px 20px;
+}
+.out-li1{   
+	padding-top: 15px;
+	background: url(../img/caiDanImg/jianTou1.png) no-repeat 192px 20px;
+	padding-bottom: 10px;
+}
+.out-li2{
+	padding-top: 15px;
+	padding-bottom: 10px;
+	background: #253443 url(../img/caiDanImg/jianTou2.png) no-repeat 188px 28px;
+	/*border-left: 2px solid #5faee3;*/
+
+}
+.out-li3{
+	padding-top: 15px;
+	padding-left: 0px;
+    padding-bottom: 10px;
+	background:  url(../img/caiDanImg/jianTou1.png) no-repeat 192px 20px;
+}
+.out-li4{
+	padding-top: 15px;
+	padding-left: 40px;
+	padding-bottom: 10px;
+	background: #253443 url(../img/caiDanImg/jianTou2.png) no-repeat 192px 28px; 
+	/*order-left: 2px solid #5faee3;*/
+}
+.in-li{
+    text-align: left;
+    line-height: 37px;
+    padding-left: 73px;	
+	
+	color: white;
+    font-size: 12px;
+}
+.in-li:hover{
+	background:rgb(31,44,57);
+}
+.nav-ul li a{
+	color: white;
+	font-size: 12px;
+	
+	width: 100%;
+}
+.navimg{
+	margin-left: 18px;
+}
+.icon1{
+
+    background: url(../img/caiDanImg/paiban.png) no-repeat 0px 4px;
+}
+.icon2{
+	background: url(../img/caiDanImg/gongZi.png) no-repeat 0px 4px;
+}
+.icon3{
+	background: url(../img/caiDanImg/renWu.png) no-repeat 0px 4px;
+}
+.icon4{
+	background: url(../img/caiDanImg/laiWen.png) no-repeat 0px 5px;
+}
+.icon5{
+	background: url(../img/caiDanImg/zhiFa.png) no-repeat 0px  4px;
+}
+.li-word{
+	margin-right: 110px;
+	padding-left: 25px;
+	color: white;
+	font-size: 12px;
+	font-weight: bold;
+	/*cursor:pointer;*/	
+}
+.jian-tou1{
+
+}
+.jian-tou{
+	float: right;
+	padding-right: 10px;
+	/*padding-top: 5px;*/
+	font-size: 29px;
+	color: #abb7c2;   
+}
+.wrap{
+	width: 1320px; 
+	margin-left: auto;
+	margin-right: auto;
+}
+.float-clear{
+	clear: both;
+}
+.right-up{
+	/*float: right;*/
+	height: 50px;
+	width: 100%;
+	background:rgb(26, 188, 156);
+	box-shadow: 0px 1px 3px 0 rgba(0,0,0,0.1);
+	/*box-shadow: 0 0 20px #424f62;*/
+	/*border-bottom: 4px solid #424f62;*/
+}
+.wenZi{
+	padding-left: 30px;
+	padding-top: 10px;
+}
+.up1{
+	float: right;
+	width: 150px;
+	padding-top: 15px;
+}
+.up1-img{
+	float: left;
+	position: relative;  
+	width: 30px;
+	height: 30px;
+	margin-top: 0px;
+    background: url(../img/caiDanImg/tongZhi-2.png) no-repeat;
+}
+.up2-img{
+	position: relative;
+	float: left;
+	width: 30px;
+	height: 30px;
+	margin-top: 0px;
+    background: url(../img/caiDanImg/xiaoXi-1.png) no-repeat;
+}
+.icon-number{
+    position: absolute;
+    left: -9px;
+    top:-8px;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    border-radius: 9px;
+    color: white;
+    background: #f2294e;
+    text-align: center;         
+        }
+.up1 a{
+	font-size: 20px;
+	color: #757573;
+	}
+.up1 a:hover{
+	color: #c81623;
+}
+
+.wangzhan-shuoming{
+	padding-top: 2px;
+	padding-bottom: 10px;
+	padding-left: 24px;
+	background:rgb(26, 188, 156);
+	
+}
+.shuoming-ch{
+	margin-left: 30px;
+	display: inline-block;
+	margin-top: 4px;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+}
+.shuoming-eg{
+	display: inline-block;
+	margin-top: 10px;
+	font-size: 20px;
+	color: white;
+}
+.up-shouye{
+  float: right;
+  padding-top: 16px;
+  padding-left: 12px;
+  padding-right: 11px;
+  padding-bottom: 5px;  
+  
+ } 
+ .up-shouye:hover{
+ 	
+    background-color:rgb(20,166,137);
+ }
+ .shouye-img{
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin-top: 3px;
+    background: url(../img/caiDanImg/shouye.png) no-repeat; 
+}
+.up-shouye a{
+	color: white;
+	font-size: 18px;
+	text-align: center;
+	margin-top: 10px;
+}
+/*.up-shouye a:hover{
+	color: #c81623;
+}*/
+ .xiaoxi-img{
+   width: 25px;
+    height: 25px;
+    float: left;
+    margin-top: 3px;
+    background: url(../img/caiDanImg/xiaoxi.png) no-repeat; 
+}
+ .shuaxin-img{
+   width: 25px;
+    height: 25px;
+    float: left;
+    margin-top: 3px;
+    background: url(../img/caiDanImg/shuaxin.png) no-repeat; 
+}
+.tuichu-img{
+   width: 25px;
+    height: 25px;
+    float: left;
+    margin-top: 3px;
+    background: url(../img/caiDanImg/tuichu.png) no-repeat; 
+}
+.wrap-top{	
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 1320px; 
+	min-width: 945px;
+	height: 50px;
+	background:rgb(26, 188, 156);
+	box-shadow: 0px 1px 3px 0 rgba(0,0,0,0.1);
+}
+#list1{
+	background: #253443;
+}
+#list2{
+	background: #253443;
+}
+#list3{
+	background: #253443;
+}
+#list4{
+	background: #253443;
+}
+#list5{
+	background: #253443;
+}
+.c7{
+	background: red;
+	height: 30px;
+	width: 30px;
+	border: 1px solid red;
+	border-radius: 10px;
+	
+}
+.log-zhuangtai{
+	display: inline-block;
+	margin-top: 5px;
+	margin-left: -24px;
+	padding-left: 16px;
+	background: url(../img/caiDanImg/zhuangTai.png) no-repeat ;
+}
+.cs{
+	background: rgb(26,188,156);
+	height: 10px;
+	width:10px;
+	border: 1px solid rgb(26,188,156);
+	border-radius: 5px;
+    z-index: 102;
+	}
+.li-left5{
+	border-bottom: 2px  solid rgb(37,52,67);
+}	
+.tou-xiang1{
+	     border-radius: 19%; 
+    background-clip: padding-box;
+    border: 3px solid #fff; 
+}
+.right{	
+	width: auto;
+	margin-left:219px; 	
+	min-width: 900px;	
+   /* background: #f1f2f7;*/
+	/*border: 2px solid yellow;*/  
+}
+.iframe{
+	width: 1101px;
+    
+    background: #f1f2f7;
+}

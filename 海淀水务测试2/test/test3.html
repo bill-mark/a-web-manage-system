@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>chec</title>
+
+<style>
+   span{
+   	position: relative;
+   }
+   .input_check{
+   	position: absolute;
+   	width: 40px;
+   	height: 40px;
+   	visibility: hidden;
+   	}
+   	.input_check+label{
+   		display: inline-block;
+   		width: 40px;
+   		height: 40px;
+   		background: url(01.png) no-repeat 0px 0px;
+   	}
+   	.input_check:checked+label{
+   		background-position: -5px -3px;
+   	}
+</style>
+
+</head>
+<body>
+<div id="container">
+<span><input type="checkbox" class="input_check" id="check3">111<label for="check3"></label></span>
+<span><input type="checkbox" class="input_check" id="check4">222<label for="check4"></label></span>
+</div>
+</body>
+</html>

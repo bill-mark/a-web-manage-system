@@ -1,0 +1,49 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script  type='text/javascript' src='jQuery.js'></script>
+<style type="text/css">
+span{width: 60px;height: 20px;display: inline-block;border: solid 1px black;text-align: center;margin: 5px;cursor:pointer;}
+</style>
+</head>
+<body>
+<div id='page'></div>
+<div id='con'></div>
+<script type='text/javascript'>
+ var arr=new Array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17);
+ /*
+ 显示那一页的内容
+ arr内容数组,那页的从哪条开始显示的，len就是每页显示内容条数
+ */
+ function pageCon(arr,start,len){
+    var constr='';
+    for(var i=start;i<start+len;i++){
+        if(arr[i-1]){
+         constr+=arr[i-1]+"<br/>";
+     }
+    }
+    return constr;
+ }
+
+function show(arr,now_page){
+  var sum=arr.length;                     //数组长度
+  var page_size=3;                       //每页显示数字个数
+  var page_num=Math.ceil(sum/page_size); //组数
+  var start=(now_page-1)*page_size+1;    
+  var page_str='';                       
+     for(var i=1;i<=page_num;i++){
+        var stylei=i;
+        if(i==now_page){  stylei="<span style='background:black;color:white;margin:0'>"+i+"</span>";}
+        page_str+='<span onclick="show(arr,'+i+')">'+stylei+'</span>';
+     }
+  $('#page').html(page_str);
+
+  var constr=pageCon(arr,start,page_size);
+  $('#con').html(constr);
+ 
+}
+show(arr,2);
+</script>
+</body>
+</html>

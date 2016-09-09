@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="jquery.js"></script>
+	<title></title>
+	<script type="text/javascript">
+		// var tb=document.getElementById('tb');
+	 //    function sc(){
+	 //    	// var tr=document.getElementsByTagName('tr')[0];
+	 //    	// tr.parentNode.parentNode.removeChild(tr);
+	 //    	tb.removeChild(tr);
+	 //    }
+	</script>
+</head>
+<body>
+  <table id="tb" >
+  	<tr>
+  	<td>666</td>
+  		
+  	</tr>
+  	<tr>
+  		<td>65466</td>
+  	</tr>
+  	<tr>
+  		<td>666</td>
+  	</tr>
+  	<tr>
+  		<td>666</td>
+  	</tr>
+  </table>
+  <button id="btn" type="button" onclick="sc()">button</button>
+  <script type="text/javascript">
+    
+  	$(function(){
+  		$('#btn').click(function(){
+  			$('#tb tr:first').siblings().remove();
+  		});
+  	});
+  </script>
+</body>
+</html>

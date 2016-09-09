@@ -1,0 +1,178 @@
+@charset "utf-8";
+body {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 微软雅黑;
+    font-size: 16px;
+}
+.top{
+	margin-top: 34px;
+	height: 50px;
+	border: 1px solid #d9d9d9;
+}
+.input{
+	width: 123px;
+}
+.rd-top1 {
+    float: left;
+    margin-left: 27px;
+    position: relative;
+    padding-top: 13px;
+    /*padding-left: 2px;*/
+}
+.icon-rili {
+    position: absolute;
+    z-index: 5;
+    left: 368px;
+    top: 17px;
+    width: 16px;
+    height: 16px;
+    background: url(../img/paiBanImg/chaxun-rili.png) no-repeat;
+    cursor: pointer;
+}
+.rd-top3 {
+    float: right;
+    margin-top: 13px;
+    margin-right: 40px;
+    width: 50px;
+    height: 24px;
+    color: white;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 1px;
+    overflow: hidden;
+    cursor: pointer;
+    background: #1a95f3;
+}
+.table-rili{
+   position: relative;	
+   margin-top: 24px;
+   width: 1060px;
+   border: 1px solid #d9d9d9;
+  
+}
+.table-rili th{
+	width: 140px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	background-color: #e3e3e3;
+}
+.table-rili td{
+	height: 110px;
+	color: #007acc;	
+	border-bottom: 1px solid #808080;
+	border-left: 1px solid #808080;
+	border-right: 1px solid #808080;
+	background-color: white;
+}
+.td-num{
+    width: 35px;
+    height: 20px;
+	margin-top: -54px;
+	margin-left:111px;	
+	background: url(../img/paiBanImg/chakan.png) no-repeat 20px 4px;
+	cursor: pointer;  /*手势*/
+}
+.riqi-selector{
+	width: 70px;
+	padding-left: 4px;
+    cursor: pointer;
+}
+.riqi-selector2{
+	width: 55px;
+	padding-left: 4px;
+    cursor: pointer;
+}
+.chaxun{
+	margin-left: 560px;
+}
+.dangqian-riqi{
+	display: inline-block;
+	width: 90px;
+}
+
+
+/*弹窗样式*/
+.tanchuang-wrap{
+	display: none;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   left: 1px;
+   top: 1px;
+   background: #e3e4e2;
+   opacity: 0.7;
+   z-index: 90;
+}
+.tanchuang{
+	display: none;
+	position: absolute;
+	left:0px;
+	top: 0px;
+	margin-left: 143px;
+	margin-top: 216px;
+	width: 800px;
+	height: 350px;
+	border:1px solid #808080;
+	z-index: 130;
+    background-color: white;
+}
+.tc-top{
+	height: 50px;
+	color: white;
+	line-height: 45px;
+	padding-left: 20px;
+	background-color: #2ba3d7;	
+}
+.tc-guanbi{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	margin-left: 670px;	
+	background: url(../img/paiBanImg/guanbi2.png) no-repeat 1px 1px;
+	cursor: pointer;
+}
+.tc-second{
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.zw-left{
+	
+	padding-left: 36px;
+}
+.zw-left2{
+	display: inline-block;
+	padding-top: 10px;
+	padding-left: 36px;
+}
+.bumen{
+	width: 150px;
+}
+.tc-table{
+	margin-left: 20px;
+    margin-top: 15px;
+   /* width: 770px; */
+    border: 1px solid black;
+}
+.tc-table th{
+	background-color: #e3e3e3;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+}
+.tc-th1{
+	width: 60px;
+}
+.tc-th2{
+	width: 270px;
+}
+.tc-th3{
+	width: 190px;
+}
+.tc-th4{
+	width: 120px;
+}
+.tc-th5{
+	width: 110px;
+}

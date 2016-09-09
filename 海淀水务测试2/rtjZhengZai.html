@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/rest.css">
+	<link rel="stylesheet" type="text/css" href="css/rtjZhengZai.css">  
+    <script type="text/javascript" src="js/rtjZhengZai.js"></script>
+</head>
+<body>
+   <div class="top">
+    	任务管理 > 任务提交
+    </div>
+   <div class="right-down" id="rightDown">	
+           <div class="down-wrap">              
+               <div class="xinxi02-xianshi">                     
+                     <div class="xinxi02-h">
+	                       任务类型
+	                       <span id="leixing" >日常</span>
+                     </div>
+                     <div class="xinxi02-h">
+                           任务周期
+                           <span id="zhouqi-start">2016-08-12 09</span>
+                           ~
+                           <span id="zhouqi-stop" class="zhouqi-stop">2016-08-25 10</span>
+                     </div>
+                     <div class="xinxi02-h">
+	                       任务状态
+	                       <span id="zhuangtai">审核通过</span>
+                     </div>
+                     <div class="xinxi02-h">
+                           任务地点
+                           <span id="didian">北清路</span>
+                     </div>
+                     <div class="xinxi02-h">
+                       事件&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                       <span id="shijian">排查污染源</span>
+                     </div>                    
+               </div>
+                                  
+	                   <div class="xinxi02-media">
+	                        <div class="rtupian">
+	                             <span class="r-tupian">图片</span>
+	                             <span class="img-left" onclick="gundong('-')" ></span>  <!-- 图片向左滚动 -->
+	                             <span class="img-right" onclick="gundong('+')" ></span>    <!--  图片向右滚动 -->
+	                                  <div  style="display:none" class="rImg3"  id="rimg3"></div>  <!-- 模态效果 -->
+	                                  <img  src="" style="display:none" class="rImg2-0"  id="rimg2">  <!-- 放大图片 -->
+	                                  <img  src="img/renWuImg/guanBi.gif" style="display:none" class="rImg4"  id="rimg4" onclick="guanBi()">
+	                                  <img  src="img/renWuImg/xuanZhuan.png" style="display:none" class="rImg5"  id="rimg5" onclick="changImg()">
+	                             <img src="img/renWuImg/12.jpg" class="rImg" id="rimg01" onclick="chakan('rimg01')">
+	                             <img src="img/renWuImg/5.jpg" class="rImg"  id="rimg02" onclick="chakan('rimg02')">
+	                             <img src="img/renWuImg/6.jpg" class="rImg"  id="rimg03" onclick="chakan('rimg03')">
+	                             <img src="img/renWuImg/15.jpg" class="rImg" id="rimg04" onclick="chakan('rimg04')">
+	                             <img src="img/renWuImg/16.jpg" class="rImg" id="rimg05" onclick="chakan('rimg05')"> 
+	                        </div>
+	                        <div >
+	                                   <span class="r-tupian">视频</span>
+			                             <table class="table-shipin-top" >
+			                             	<tr>
+			                             		<th class="top-table-th">名称</th>
+			                             		<th class="top-table-th">说明</th>
+			                             		<th class="top-table-th">名称</th>
+			                             		<th class="top-table-th">说明</th>
+			                             	</tr>
+			                             </table>
+	                                     <div class="table-wrap">
+	                                     	 <table class="table-shipin" id="table2">
+	                                     	 	<tr>
+	                                     	 		<td class="td1"><a href="">0830.mp4</a></td>
+	                                     	 		<td class="td2">造纸厂排污口巡查</td>
+	                                     	 		<td class="td1"><a href="">0927.mp4</a></td>
+	                                     	 		<td class="td2">科技园西侧水渠检查</td>
+	                                     	 	</tr>
+	                                     	 </table>
+	                                     </div>
+	                        </div>
+	                   </div>
+             
+           </div>  
+
+           <div class="tijiao" id="tijiao">
+           	  提交
+           </div>
+    </div>
+</body>
+</html>

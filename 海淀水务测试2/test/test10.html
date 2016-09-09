@@ -1,0 +1,30 @@
+ 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" > 
+<meta charset="utf-8">
+<head> 
+<title>Untitled Page</title> 
+</head> 
+<body> 
+<ul id="list"> 
+<li>第1条记录</li> 
+<li>第2条记录</li> 
+<li>第3条记录</li> 
+<li>第4条记录</li> 
+<li>第5条记录</li> 
+<li>第6条记录</li> 
+</ul> 
+<script type="text/javascript"> 
+function tt(nob) { 
+this.clickFunc = function() { 
+alert("这是第" + (nob + 1) + "记录"); 
+} 
+} 
+var list_obj = document.getElementById("list").getElementsByTagName("li"); //获取list下面的所有li的对象数组 
+for (var i = 0; i <= list_obj.length; i++) {  
+var col = new tt(i); 
+list_obj[i].onclick = col.clickFunc; 
+} 
+</script> 
+</body> 
+</html> 

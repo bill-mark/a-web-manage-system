@@ -1,0 +1,165 @@
+@charset "utf-8";
+body {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 微软雅黑;
+    font-size: 16px;
+    background-color: #f5f5f5;
+}
+.top{
+	margin-top: 23px;
+	color: #0074cc;
+	font-weight: 700;
+}
+.mid{
+	margin-top: 40px;
+	/*position: relative;*/ /*给点击撤销显示内容的div坐定位*/
+}
+.mid a{
+	color: #1a95f3;
+}
+.mid-left{
+	display: inline-block;
+	width: 80px;
+	text-align: center;
+	color: #1a95f3;
+	border-bottom: 2px solid #d9d9d9;
+}
+.mid-right{
+	display: inline-block;
+
+	width: 80px;
+	color: #1a95f3;
+	margin-left: -5px;
+	border-bottom: 2px solid #1a95f3;
+}
+.mind-right2{
+	margin-top: -2px;
+	margin-left: 160px;
+    width: 900px;
+    border-bottom: 2px solid #d9d9d9;
+}
+.mid2{
+	position: relative;	
+	margin-top: 30px;
+	width: 100%;
+	height: 55px;
+	background-color: white;
+	border:1px solid #d9d9d9;
+}
+.icon-rili {
+    position: absolute;
+    z-index: 5;
+    left: 172px;
+    top: 20px;
+    width: 16px;
+    height: 16px;
+    background: url(../img/paiBanImg/chaxun-rili.png) no-repeat;
+    
+}
+.rili{
+   margin-top: 14px;
+   margin-left: 7px;
+   padding-left: 8px;
+   width: 125px;
+}
+.datetimepicker{  /*修正日历的位置*/
+	    margin-top: 24px;
+	    margin-left: 12px;
+}
+.queren{
+	display: inline-block;
+    float: right;
+    margin-right: 30px;
+    margin-top: 15px;
+    width: 50px;
+    height: 23px;
+    text-align: center;
+    left: 23px;
+    color: white;
+    background-color: #1a95f3;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.table-xiaojia{
+	margin-top: 20px;
+	border: 1px solid #d9d9d9;
+}
+.table-xiaojia th{
+	width: 1060px;
+	height: 50px;
+	background-color: #e3e3e3;
+	text-align: center;
+    line-height: 50px;
+   /* font-weight: 600;*/
+}
+.th1{
+	width: 400px;  
+}
+.th2{
+	width: 296px;
+}
+.th3{
+	width: 265px;
+}
+.th4{
+	width: 95px;
+}
+.table-xiaojia td{
+	height: 60px;	
+	text-align: center;
+    line-height: 50px;
+
+}
+.tr-white{
+	background-color: white;
+}
+.tr-blue{
+	background-color: #d6edff;
+}
+.diy-pag{
+	margin-top: 35px;
+	padding-left: 382px;
+}
+.td-xiaojia{
+
+	/*color: #0074cc;*/
+	cursor: pointer;
+}
+
+.xjtext{            /*  销假弹窗*/
+	position: absolute; /*mid position为relaive*/
+    display: none;
+    top:135px;
+    width: 1063px;
+    height: 580px;
+    border:1px solid black;
+    background-color: white;
+}
+.bottom-table{
+	font-size: 16px;
+
+}
+.td-left {
+    padding-left: 25px;
+    width: 95px;
+    text-align: left;
+    height: 70px;
+}
+.td-right {
+    padding-left: 60px;
+    width: 400px;
+    text-align: left;
+}
+.buttom {
+    margin-top: 55px;
+    margin-left: 450px;
+    width: 65px;
+    height: 35px;
+    color: white;
+    text-align: center;
+    line-height: 35px;
+    background-color: #1A95f3;
+    border-radius: 2px;
+    cursor: pointer;
+}

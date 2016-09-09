@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="bootstrap3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap3.3.5/css/bootstrap-datetimepicker.css">
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="bootstrap3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bootstrap3.3.5/js/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="bootstrap3.3.5/js/bootstrap-datetimepicker.zh-CN.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/rest.css">
+	<link rel="stylesheet" type="text/css" href="css/rAnPai.css">	
+    <script type="text/javascript" src="js/rAnPai.js"></script>
+</head>
+
+<body>
+        <div class="tanchuang-wrap" id="tanchuang-wrap">       
+        </div>  
+        <div class="tanchuang" id="tanchuang">
+             <div class="tc-top">
+                新增队员
+                <span class="tc-guanbi" id="tc-guanbi"></span>
+             </div> 
+             <div class="tc-zhiwei">
+                    <span class="zw-left">
+                        部门 
+                        <select class="bumen" id="bumen" onchange="xianshi()">
+                            <option value="" selected="true" disabled="disabled">--请选择--</option>
+                            <option value="00">办公室</option>
+                            <option value="01">一队</option>
+                            <option value="02">二队</option>
+                            <option value="03">三队</option>
+                        </select>
+                    </span>
+                    <span class="zw-left">
+                        职位 
+                        <select class="bumen" id="zhiwei" onchange="xianshi()">
+                            <option value="" selected="true" disabled="disabled">--请选择--</option>
+                            <option value="10">全员</option>
+                            <option value="11">队员</option>
+                            <option value="12">文职</option>
+                        </select>
+                    </span>
+             </div> 
+             <div class="tc-xuanze">
+                <form action="" method="" >
+                    <label class="label-local"><input type="checkbox" name="checkbox1" class="chk">马可可</label>
+                    <label class="label-local"><input type="checkbox" name="checkbox1" class="chk">宋可可</label>
+                    <label class="label-local"><input type="checkbox" name="checkbox1" class="chk">刘可可</label>
+                    <label class="label-local"><input type="checkbox" name="checkbox1" class="chk">赵可可</label>
+                    <br>
+                    <label class="label-local"><input type="checkbox" name="checkbox1" class="chk">王可可</label>
+                    <label class="label-local"><input type="checkbox" name="checkbox1" class="chk">牛可可</label>
+                    <label class="label-local"><input type="checkbox" name="checkbox1" class="chk">张可可</label>
+                    <label class="label-local"><input type="checkbox" name="checkbox1" class="chk">孙可可</label>
+                    <br>
+                    <input type="submit" name="submit" value="确 认" class="tc-qr">
+                    <div class="tc-gb" id="tc-guanbi2">关 闭</div>
+                </form>
+             </div>   
+        </div>
+    <div class="top">
+    	任务管理 > 任务安排
+    </div>
+    <form class="bottom">
+        <p class="p">
+            任务类型 
+            <select class="select" id="select">
+                <option value="" selected="true" disabled="disabled">选择类型</option>
+                <option value="">巡查</option>
+                <option value="">出警</option>
+            </select>
+        </p>
+        <p class="p p2">
+            任务周期
+             <input type="text" name="begin" class="dates input1" >
+              ~
+             <input type="text" name="stop" class="dates"> 
+             <i class="icon-rili" onclick=""></i>
+             <i class="icon-rili2" onclick=""></i> 
+        </p>  
+        <p class="p pthird">
+            发送至
+            <div class="td3"  id="td3">
+                    <div class="down-name">
+                        张继科
+                        <span class="down-ic"></span>
+                    </div>
+                    <div class="down-name">
+                        马龙
+                        <span class="down-ic"></span>
+                    </div>
+                    <div class="down-tianjia" onclick="tianjia(this)">  
+                    </div>                                                                  
+            </div>
+        </p> 
+        <p class="p">
+            <span class="didian-word">任务地点</span>
+            <textarea class="textarea"></textarea>
+        </p>
+        <p class="p">
+            事件
+            <textarea class="textarea2"></textarea>
+        </p>
+    </form>   
+    <div class="button" onclick="queren()">
+    	确认
+    </div>     
+    <script type="text/javascript" src="js/rili.js"></script> <!-- 放在HTML文档加载之后 --> 
+</body>
+</html>

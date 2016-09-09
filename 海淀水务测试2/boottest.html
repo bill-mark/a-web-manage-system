@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- ie8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- 移动设备 -->
+    <meta name="renderer" content="webkit"><!-- 国产浏览器 360 -->
+	  <link rel="stylesheet" type="text/css" href="bootstrap3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap3.3.5/css/bootstrap-datetimepicker.css">
+	  <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="bootstrap3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bootstrap3.3.5/js/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="bootstrap3.3.5/js/bootstrap-datetimepicker.zh-CN.js"></script> <!-- 中文界面-->
+    <style>
+      body{
+        position: relative;
+        padding-top:40px;
+      }
+      
+   </style>    
+</head>
+<body>   
+ 
+ <input type="text" class="dates">
+ <input type="text" class="dates">
+ <button id="ddc"></button>
+
+  <script type="text/javascript">
+        $('.dates').datetimepicker({
+             minView:'1',//0为精确到分钟 1为小时
+             format: 'yyyy-mm-dd hh',
+             weekStart:'1',  //从周一开始
+             autoclose:'1', //选完之后关闭
+             todayBtn:'true',//将视图转到当天的日期
+             todayHighlight: '1',// 高亮当前日期            
+             language: 'zh-CN' ,
+        });
+
+        var cc=document.getElementById('ddc');
+        cc.onclick=function(){
+        var ce=document.getElementById('datetimepicker');
+        alert(ce.value)
+       }
+  </script>
+</body>
+</html>

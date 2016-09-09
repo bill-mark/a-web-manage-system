@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="jquery.js"></script>
+</head>
+<body>
+<div class="td-num">
+	6666
+</div>
+<div class="td-num">
+	777
+</div>
+
+
+<div id="div" style="display:none;width:200px;height:300px;z-index:999;background:gray;color:white;">
+	<p id="p1"></p>
+</div>
+
+
+<script>
+	$(function(){
+		$('.td-num').click(function(){
+			$("#p1").text("1231231");
+			$("#div").show();
+
+
+		});
+
+	});
+</script>
+</body>
+</html>

@@ -56,12 +56,12 @@ body{
     text-align: center;
     cursor:pointer;
 }
-.gaoliang :hover{
+/*.gaoliang :hover{
 	background: rgb(37,52,67) url(../img/caiDanImg/jianTou1.png) no-repeat 192px 20px;
-}
+}*/
 .out-li1{   
 	padding-top: 15px;
-	background: url(../img/caiDanImg/jianTou1.png) no-repeat 192px 20px;
+	background: url(../img/caiDanImg/jianTou1.png) no-repeat 192px 24px;
 	padding-bottom: 10px;
 }
 .out-li2{
@@ -87,13 +87,20 @@ body{
 .in-li{
     text-align: left;
     line-height: 37px;
-    padding-left: 73px;	
-	
+    padding-left: 73px;		
 	color: white;
     font-size: 12px;
 }
 .in-li:hover{
 	background:rgb(31,44,57);
+}
+.in-li2{
+    text-align: left;
+    line-height: 37px;
+    padding-left: 73px;		
+	color: white;
+    font-size: 12px;
+    background:rgb(31,44,57);
 }
 .nav-ul li a{
 	color: white;

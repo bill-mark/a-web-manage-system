@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>销假审批</title> 
+	<link rel="stylesheet" type="text/css" href="bootstrap3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap3.3.5/css/bootstrap-datetimepicker.css">
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="bootstrap3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bootstrap3.3.5/js/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="bootstrap3.3.5/js/bootstrap-datetimepicker.zh-CN.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/rest.css">
+	<link rel="stylesheet" type="text/css" href="css/pShenPi.css">	
+	<script type="text/javascript" src="js/pShenPi.js"></script>
+</head>
+<body>
+    <div class="top">
+    	排版管理 > 销假审批
+    </div>
+
+     
+    <div class="mid2" id="mid2">
+        &nbsp&nbsp&nbsp&nbsp
+        日期
+        <input type="text" class="rili" id="datetimepicker">
+        <i class="icon-rili" onclick=""></i>
+        &nbsp&nbsp&nbsp&nbsp
+        队员
+        
+        <select class="" id="">
+          <option value="" selected="selected" disabled="disabled">--请选择--</option>
+          <option >所有队员</option>
+          <option> 张艺兴</option>
+        </select>
+        <button type="submit" onclick="" class="mid2-bt">确认</button>
+    </div>
+
+    <div class="xjtext" id="xjtext">
+        <table class="bottom-table">
+        <tr>
+          <td class="td-left">姓名</td>
+          <td id="name" class="td-right">张继科</td>
+        </tr>
+            <tr>
+              <td class="td-left">所属部门</td>
+              <td id="bumen" class="td-right">XX部</td>
+            </tr>
+            <tr>
+              <td class="td-left">职位</td>
+              <td id="zhiwei" class="td-right">队员</td>
+            </tr>
+            <tr>
+              <td class="td-left">上级</td>
+              <td id="shangji" class="td-right">福原爱</td>
+            </tr>
+            <tr>
+              <td class="td-left">请假时间</td>
+              <td id="time" class="td-right">
+                  <span id="start">2016-10-9 09</span>~<span id="stop">2016-10-12 15</span>
+              </td>                     
+            </tr>
+            <tr>
+              <td class="td-left">备注</td>
+              <td id="beizhu" class="td-right">家里有事</td>              
+            </tr>
+            
+            <tr>
+              <td class="td-left tr7">意见</td>
+              <td  class="td-right">
+                <textarea class="yijian" id="yijian"></textarea>
+              </td>              
+            </tr>
+      </table>
+      <div class="buttom" onclick="tongguo()">
+          通过
+      </div>
+      <div class="buttom2" onclick="butongguo()">
+          不通过
+      </div>
+    </div>
+
+
+
+
+    <div class="bottom" id="bottom">
+         <table class="table-xiaojia" id="table-xiaojia">
+             <tr>
+                 <th class="th1">请假原因</th>
+                 <th class="th2">起始时间</th>
+                 <th class="th3">结束时间</th>
+                 <th class="th4">操作</th>
+             </tr>
+         </table>
+    </div>
+     <ul class="pagination diy-pag" id="pag"> 
+                <li><a href="#">&laquo;</a></li> 
+                <li><a href="#">1</a></li> 
+                <li><a href="#">2</a></li> 
+                <li><a href="#">3</a></li> 
+                <li><a href="#">4</a></li> 
+                <li><a href="#">5</a></li> 
+                <li><a href="#">&raquo;</a></li> 
+      </ul>
+<script type="text/javascript" src="js/pXiaoJia_rili.js"></script>       
+</body>
+</html>

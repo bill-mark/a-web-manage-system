@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">  
+<html>  
+<meta charset="utf-8">
+ <head>  
+  <script language="JavaScript">  
+  <!--  
+    function GaiBian(osel){  
+if(osel.options[osel.selectedIndex].text==1){alert(11);}  
+    }  
+  //-->  
+  </script>  
+ </head>  
+   
+ <body>  
+  <select name='selectSS' onChange="GaiBian(this)">  
+  <option value='1'>1 </option>   
+  <option value='2'>2 </option>   
+  <option value='3'>3 </option>   
+  </select>   
+  <select  onchange="window.location.href=this.options[this.selectedIndex].value">  
+    <option value="http:\\www.baidu.com">百度</option>  
+    <option value="http:\\www.google.cn">谷歌</option>  
+</select>   
+ </body>  
+</html>  

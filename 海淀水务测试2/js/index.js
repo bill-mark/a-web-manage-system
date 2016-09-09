@@ -12,15 +12,6 @@ window.onload=function(){
 function showmenu(id) {
     var list = document.getElementById("list"+id);
     var menu = document.getElementById("menu"+id);
-
-    // if (list.style.display=="none") {
-    //     document.getElementById("list"+id).style.display="block";
-    //     menu.className="out-li2"
-    // }
-    // else {
-    //      document.getElementById("list"+id).style.display="none";
-    //      menu.className="out-li1"
-    // }
     switch(list.style.display){  //switch相对快些
         case 'none':
              document.getElementById("list"+id).style.display="block";
@@ -32,9 +23,6 @@ function showmenu(id) {
              break;     
     }
  }  
-
-
-
 //执法队伍管理专用菜单
 function showmenu2(id) {
     var list2 = document.getElementById("list"+id);
@@ -48,10 +36,9 @@ function showmenu2(id) {
     }
 }
 //点击切换右侧页面
-
-function changeweb(id){
+function changeweb(obj,id){
+         obj.className="in-li2"; //更换点击后背景色
          var iframe = document.getElementById('iframe');
          var chg = id+'.html';  //拼接html文件    
-         iframe.setAttribute("src",chg); //设置对象的属性
-
+         iframe.setAttribute("src",chg); //设置对象的属性        
 }

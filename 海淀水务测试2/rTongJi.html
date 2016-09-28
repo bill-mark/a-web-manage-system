@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>任务统计</title> 
+	<link rel="stylesheet" type="text/css" href="bootstrap3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap3.3.5/css/bootstrap-datetimepicker.css">
+	  <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="bootstrap3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bootstrap3.3.5/js/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="bootstrap3.3.5/js/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script type="text/javascript" src="js/fenye02.js"></script>
+	  <script type="text/javascript" src="js/echarts.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/rest.css">
+	<link rel="stylesheet" type="text/css" href="css/rTongJi.css">	
+	<script type="text/javascript" src="js/rTongJi.js"></script>
+</head>
+<body>
+    <div class="tanchuang-wrap" id="tanchuang-wrap">       
+        </div>	
+        <div class="tanchuang" id="tanchuang">
+        	<div class="tc-top">
+        	 	新增队员
+        	 	<span class="tc-guanbi" id="tc-guanbi"></span>
+        	 </div>	
+        	<div class="down-wrap">              
+               <div class="xinxi02-xianshi" id="xinxi02-xianshi">                     
+                     <div class="xinxi02-h">
+	                       任务类型
+	                       <span id="leixing"></span>
+                     </div>
+                     <div class="xinxi02-h">
+                           任务周期
+                           <span id="zhouqi-start"></span>
+                           ~
+                           <span id="zhouqi-stop" class="zhouqi-stop"></span>
+                     </div>
+                     <div class="xinxi02-h">
+	                       任务状态
+	                       <span id="zhuangtai"></span>
+                     </div>
+                     <div class="xinxi02-h">
+                           任务地点
+                           <span id="didian"></span>
+                     </div>
+                     <div class="xinxi02-h">
+                       事件&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                       <span id="shijian"></span>
+                     </div>                    
+               </div>                                
+               <div class="xinxi02-media">
+                    <div class="rtupian">
+                         <span class="r-tupian">图片</span>
+                         <span class="img-left" onclick="gundong('-')" ></span>  <!-- 图片向左滚动 -->
+                         <span class="img-right" onclick="gundong('+')" ></span>    <!--  图片向右滚动 -->
+                              <div  style="display:none" class="rImg3"  id="rimg3"></div>  <!-- 模态效果 -->
+                              <img  src="" style="display:none" class="rImg2-0"  id="rimg2">  <!-- 放大图片 -->
+                              <img  src="img/renWuImg/guanBi.gif" style="display:none" class="rImg4"  id="rimg4" onclick="guanBi()">
+                              <img  src="img/renWuImg/xuanZhuan.png" style="display:none" class="rImg5"  id="rimg5" onclick="changImg()">
+                         <img class="rImg" id="rimg01" onclick="chakan('rimg01')">
+                         <img class="rImg" id="rimg02" onclick="chakan('rimg02')">
+                         <img class="rImg" id="rimg03" onclick="chakan('rimg03')">
+                         <img class="rImg" id="rimg04" onclick="chakan('rimg04')">
+                         <img class="rImg" id="rimg05" onclick="chakan('rimg05')"> 
+                    </div>
+                    <div >
+                               <span class="r-tupian">视频</span>
+	                             <table class="table-shipin-top" >
+	                             	<tr>
+	                             		<th class="top-table-th">名称</th>
+	                             		<th class="top-table-th">说明</th>
+	                             		<th class="top-table-th">名称</th>
+	                             		<th class="top-table-th">说明</th>
+	                             	</tr>
+	                             </table>
+                                 <div class="table-wrap">
+                                 	 <table class="table-shipin" id="table2">
+                                 	 	<!-- <tr>
+                                 	 		<td class="td1"><a href="">0830.mp4</a></td>
+                                 	 		<td class="td2">造纸厂排污口巡查</td>
+                                 	 		<td class="td1"><a href="">0927.mp4</a></td>
+                                 	 		<td class="td2">科技园西侧水渠检查</td>
+                                 	 	</tr> -->
+                                 	 </table>
+                                 </div>
+                    </div>
+               </div>
+           
+           </div>  
+        </div> 
+
+
+
+    <div class="top">
+    	任务管理 > 任务统计
+    </div>
+    <div class="mid2" id="mid2">
+        &nbsp&nbsp&nbsp&nbsp
+          开始日期
+        <input type="text" class="dates riqi1" name="start" id="start_riqi">
+       <!--  <i class="icon-rili" onclick=""></i> -->
+        &nbsp&nbsp
+        结束日期
+        <input type="text" class="dates riqi1" name="real_stop" id="stop_riqi">
+<!--         <i class="icon-rili" onclick=""></i> -->
+         &nbsp&nbsp     
+        任务类型      
+         <select class="" id="select_leixing" name="leixing">
+                  <option value="" selected="selected" disabled="disabled">--请选择--</option>
+                  <option value="00">全部</option>
+                  <option value="01">巡检</option>
+                  <option value="02">执法</option>
+                  <option value="03">日常</option>
+         </select>
+         &nbsp&nbsp     
+        任务状态    
+         <select class="" id="select_zhaungtai" name="leixing">
+                  <option value="" selected="selected" disabled="disabled">--请选择--</option>
+                  <option value="00">全部</option>
+                  <option value="01">已完成</option>
+                  <option value="02">未执行</option>
+                  <option value="03">已审核</option>
+                  <option value="03">执行中</option>
+         </select>
+        <button type="button"  class="mid2-bt" id="tijiao_queren">统计</button>
+        <!-- <button type="submit" onclick="" class="mid2-bt">统计</button> -->
+    </div>
+
+    <div class="tubiao" id="tubiao"></div>  <!-- 统计图 -->
+
+
+    <div class="bottom" id="bottom">
+    任务列表
+         <table class="table-xiaojia" id="table-xiaojia">
+             <tr>
+                 <th class="th1">开始日期</th>
+                 <th class="th2">任务名称</th>
+                 <th class="th1">地点</th>
+                 <th class="th3">操作</th>              
+             </tr>
+         </table>
+    </div>
+
+  <div id="setpage"></div>
+     
+<script type="text/javascript" src="js/rili.js"></script>       
+</body>
+</html>

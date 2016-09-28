@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> <meta charset="utf-8">
+<title>guestbook demo</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" /> 
+<meta name="Author" content="Sheneyan" /> 
+<script type="text/javascript"> 
+var data = [ 
+{ 
+id:11, 
+name:'路人甲', 
+mail:'somebodyA@foo.com', 
+title:'测试一下这个留言板好用不', 
+content:'测试就是测试，不要问我为什么测试，也不要问我为了什么测试，反正我就是要测试，你能把我怎么着？', 
+time:'2007-03-21 12:33:43' 
+}, 
+{ 
+id:12, 
+name:'路人乙', 
+mail:'somebodyB@foo.com', 
+title:'你好，麻烦你一件事', 
+content:'你好，你能告诉我你的QQ吗？我有事麻烦你', 
+time:'2007-03-22 22:33:43' 
+}, 
+{ 
+id:13, 
+name:'路人丙', 
+mail:'somebodyC@foo.com', 
+title:'啊啊啊', 
+content:'世界如此美好，我脾气如此暴躁，这样不好~不好~~', 
+time:'2007-03-23 12:03:41' 
+}, 
+{ 
+id:14, 
+name:'路人丁', 
+mail:'somebodyD@foo.com', 
+title:'...', 
+content:'其实。。。我是一个演员', 
+time:'2007-03-23 22:04:08' 
+}, 
+{ 
+id:15, 
+name:'xxx', 
+mail:'armyA@foo.com', 
+title:'xxx', 
+content:'长夜漫漫无新睡眠，咦，怎么先生你也没睡？', 
+time:'2007-03-24 11:12:55' 
+} 
+]; 
+function getMutliData(){ 
+var x = p = document.getElementById('post'); 
+for (var i = 0 ; i < data.length ; i ++){ 
+var o = p.cloneNode(true); 
+if (x.nextSibling) 
+x.parentNode.insertBefore(o,x.nextSibling); 
+else 
+x.parentNode.appendChild(o); 
+var t = o.innerHTML; 
+t = t.replace(/<!--{(.*?)}-->/g,function(a,b){ 
+var v = ""; 
+try{ 
+v = eval("data["+i+"]."+b); 
+} 
+catch(e){} 
+return v; 
+}); 
+o.innerHTML = t; 
+x = o; 
+} 
+p.style.display='none'; 
+} 
+</script> 
+</head> 
+<body> 
+<div id="post"> 
+<fieldset> 
+<legend id="post_header">(<!--{id}-->)<a href='mailto:<!--{mail}-->'><!--{name}--></a>于<!--{time}-->发表：</legend> 
+<h4 id="post_title"><!--{title}--></h4> 
+<p id="post_content"><!--{content}--></p> 
+</fieldset> 
+</div> 
+<button onclick="getMutliData()">获取多条数据(模拟ajax获取数据)</button> 
+</body> 
+</html> 
+

@@ -142,8 +142,7 @@ body{
 	display: inline-block;
 	width: 14px;
 	height: 14px;
-	margin-left: 395px;
-	
+	margin-left: 395px;	
 	background: url(../img/paiBanImg/guanbi2.png) no-repeat 1px 1px;
 	cursor: pointer;
 }
@@ -219,3 +218,4 @@ body{
 	border-radius: 2px;
 	cursor: pointer;
 }
+

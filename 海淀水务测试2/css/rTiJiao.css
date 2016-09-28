@@ -124,6 +124,7 @@ body {
 }
 .td-xiaojia{
     display: inline-block; /*让a标签在没有text的情况下背景图片显示*/
+    margin-top: 18px;
     width: 22px;
     height: 23px;
     background:url(../img/renWuImg/fangdajing.png) no-repeat;
@@ -190,7 +191,7 @@ body {
     cursor: pointer;
 }
 .mid2-bt{
-    margin-left: 610px;
+    margin-left: 760px;
     color: white;
     background-color: #1a95f3;
 }

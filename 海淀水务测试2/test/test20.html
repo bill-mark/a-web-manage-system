@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+ <div id="dcc">
+ 	<label><555/label>
+ </div>
+ <button onclick="fcc()">click</button>
+
+ <script type="text/javascript">
+ 	function fcc(){
+ 		var label=document.createElement('label')
+ 		document.getElementById('dcc').appendChild(label);
+ 		alert( document.getElementById('dcc').typeof )
+ 	}
+
+ </script>
+</body>
+
+var  html=‘’
+for(var i=0;i<data.renyuan.length;i++){
+               html = '<span class="label-local"><input type="checkbox" name="checkbox1" class="chk"> '+data.renyuan[i].name+'</span>';
+              
+            } ;
+ //$('#renyuan_liebiao').append(h
+tml);
+document.getElementById('renyuan_liebiao').innerHTML=html
+
+
+</html>
+$('#div_id').append(html);
+请问这句话用JS怎么写？我用JS写的报错div是对象不是节点
+document.getElementById(div_id).appendChild(html);

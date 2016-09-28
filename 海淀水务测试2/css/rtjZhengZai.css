@@ -189,6 +189,7 @@ body {
     background-color: #e5e5e5;
 }
 .top-table-th{
+    text-align: center;
     font-weight: 400;
 }
 .table-wrap{
@@ -225,4 +226,8 @@ body {
     line-height: 24px;
     border-radius: 3px;
     cursor: pointer;
+}
+.as{
+   /* color: black;*/
+   
 }

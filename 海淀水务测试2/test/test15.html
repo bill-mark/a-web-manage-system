@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title></title>
+
+</head>
+<body>
+   <canvas id="canvas01" width="350px" height="350px"> </canvas> 
+
+	<script type="text/javascript">
+		var canvas = document.getElementById('canvas01');//定义画布
+		var ctx = canvas.getContext('2d'); //定义2d画笔
+
+		ctx.beginPath();
+		ctx.strokeStyle = "#5264c8";
+        ctx.arc(200,200,150,0,0.5*Math.PI);//默认逆时针,圆心坐标,半径,开始以及结束的弧度
+        ctx.lineWidth = 60; //画笔宽度
+        ctx.stroke();//描边
+        ctx.closePath();//结束
+
+        ctx.beginPath();
+		ctx.strokeStyle = "#f74336";
+        ctx.arc(200,200,150,0.5*Math.PI,1.2*Math.PI);
+        ctx.lineWidth = 60;
+        ctx.stroke();
+        ctx.closePath();
+
+        ctx.beginPath();
+		ctx.strokeStyle = "#52cc2d";
+        ctx.arc(200,200,150,1.2*Math.PI,2*Math.PI);
+        ctx.lineWidth = 60;
+        ctx.stroke();
+        ctx.closePath();
+ 
+        // canvas.addEventListener('mouseover',function(){
+        // 	 alert('555');
+        // })
+         canvas.onmousemove =function(){
+         	//if(this.color=='#5264c8'){alert('555');}
+         //	alert('555');
+         }
+	</script>
+</body>
+</html>

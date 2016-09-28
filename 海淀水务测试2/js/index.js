@@ -7,6 +7,7 @@ window.onload=function(){
         sidebar.style.height=document.documentElement.clientHeight+'px';      
     }
     setheight();   
+
     } 
     //菜单js
 function showmenu(id) {

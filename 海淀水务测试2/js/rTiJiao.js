@@ -1,23 +1,45 @@
 //创建点击撤销调用的闭包函数
-function cx(num){
-  this.clickFunc = function(){
-    //alert(num);
+function cx(num){  //num表示任务序列
+  this.clickFunc = function(){  
+   // alert(num);
     var mid2=document.getElementById('mid2');
     var bottom=document.getElementById('bottom');
-    var pag=document.getElementById('pag');
+    var pag=document.getElementById('setpage');
     var mid3=document.getElementById('mid3');
     mid2.style.display='none';
     bottom.style.display='none';
     pag.style.display='none';
     mid3.style.display='none';
+  
+     $.ajax({         //点击查看执行ajax加载
+         type:'post',
+         url:'demo.json',  //模拟返回的json数据
+         dataType:'json',      //预期服务器返回的数据类型
+         data:{
+             id: num   //发送参数
+         },
+         success:function(data){      //返回顺序不能变
+            var rws=document.getElementsByClassName('rws');
+            
+            var i=0;
+                 for(var key in data){
+                     rws[i].innerText=data[key];
+                     i+=1;
+                 }
+         },
+         error:function(err){
+          alert('fail');
+         }
+     });
+
     var xjtext=document.getElementById('xjtext');
-    xjtext.style.display='block';
+     xjtext.style.display='block';
   }
 }
 
+
 window.onload=function (){
 	var table =document.getElementById('table-xiaojia');  
-
  	for(var i=0;i<6;i++){  //循环创建6个tr元素
     	  var tr =document.createElement('tr');
     	  tr.id='tr'+i;  
@@ -31,9 +53,6 @@ window.onload=function (){
                     // td.appendChild(div); //给td添加div元素
             }
     }
-  //模拟从服务器获得数据
-    var neirong = new Array('巡查东面小河','会议室开会','外出考察')
-     
        for(i=0;i<6;i++){     //根据tr的id显示颜色
            var trs=document.getElementById('tr'+i);
            if(i%2==0){
@@ -42,25 +61,52 @@ window.onload=function (){
            else{
            	  trs.className='tr-blue';
            }  
-       }
+       }    
+  
 
-       for(var i=0;i<neirong.length;i++){  //把数据赋值到td中
-       	   var tds=document.getElementById('td'+i+0);            
-               tds.innerHTML=i+1; 
-           for(var j=0;j<2;j++){
-       	   	  var tds=document.getElementById('td'+i+1);    	   	  
-       	   	   tds.innerHTML=neirong[i];           
-       	   }
-     	    var tds=document.getElementById('td'+i+2);
-             
-          	   var as=document.createElement('a');
-             
-          	 //  as.innerHTML='详情';
-               as.className='td-xiaojia';
-          	  // as.href='pXiaoJiaNext'+i+'.html';             
-         	tds.appendChild(as);
-          var col = new cx(i);//调用回调函数
-          as.onclick = col.clickFunc;                    
-       }
-      
+  document.getElementById("tijiao_queren").onclick=function(){  //确认按钮执行函数    
+      // var duiyuan=document.getElementById("select_duiyuan").value;  
+      //           if(riqi == null || riqi==''){    //判断是否输入
+      //                  if(duiyuan == null || duiyuan==''){
+      //                            alert("日期，队员未选择");
+      //                            return false;
+      //                          }else{
+      //                           alert("日期未选择");
+      //                           return false;
+      //                          }
+      //           }else{
+      //              if(duiyuan == null || duiyuan==''){
+      //                     alert("队员未选择");
+      //                     return false;
+      //              }
+      //           }
+      //     document.getElementById('formId').submit();  //提交数据       
+
+      var riqi= document.getElementById("datetimepicker").value;
+      if(riqi == null || riqi==''){    //判断是否输入
+            alert('日期未选择');
+            return false;
+      }
+       
+       $.ajax({
+          type:'post',
+          url:'rTiJiao.json',//模拟请求发回的数据
+          dataType:'json',
+          data:riqi, //发送选择的日期
+          success:function(data){   
+               fenye(data);   //调用分页函数
+          },
+          error:function(err){
+               alert('err');
+          }
+       })
+ }
+                    
 }  
+
+
+
+
+
+
+ 

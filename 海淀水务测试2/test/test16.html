@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title></title>
+    <script type="text/javascript" src='../js/echarts.js'>
+    	
+    </script>
+</head>
+<body>
+      <div id="tubiao" style="width: 600px;height:400px;"></div>
+
+      <script type="text/javascript">
+      //模拟从服务器接收到的数据
+      var nums=new Array('335','464','230');
+
+      var myChart = echarts.init(document.getElementById('tubiao'));
+      // 指定图表的配置项和数据
+      var option = {
+			    tooltip: {
+			        trigger: 'item',
+			        formatter: "{a} <br/>{b}: {c} ({d}%)"
+			    },
+			    legend: {
+			        orient: 'vertical',
+			        x: 'left',
+			        data:['巡检','执法','日常']
+			    },
+			    series: [
+			        {
+			            name:'所占比例',
+			            type:'pie',  //设置图表样式为环形图
+			            radius: ['35%', '60%'],
+			            avoidLabelOverlap: false,
+			            label: {
+			                normal: {
+			                    show: false,
+			                    position: 'center'
+			                },
+			                emphasis: {
+			                    show: true,
+			                    textStyle: {
+			                        fontSize: '30',
+			                        fontWeight: 'bold'
+			                    }
+			                }
+			            },
+			            labelLine: {
+			                normal: {
+			                    show: false
+			                }
+			            },
+			            data:[
+			                {value:nums[0], name:'巡检',itemStyle:{normal:{color:'#f74336'}}},
+			                {value:nums[1], name:'执法',itemStyle:{normal:{color:'#52cc2d'}}},
+			                {value:nums[2], name:'日常',itemStyle:{normal:{color:'#5264c8'}}},
+			              
+			            ]
+			        }
+			    ]
+			};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+      </script>
+</body>
+</html>

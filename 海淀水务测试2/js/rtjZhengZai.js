@@ -37,7 +37,9 @@ function guanBi(){
 var e=0;//在滚动函数外部声明e，每次点击右边按钮+1
 function gundong(id){
   //本地模拟服务器数据
-  var tp=["img/renWuImg/12.jpg","img/renWuImg/5.jpg","img/renWuImg/6.jpg","img/renWuImg/15.jpg","img/renWuImg/16.jpg","img/renWuImg/21.jpg","img/renWuImg/22.jpg","img/renWuImg/23.jpg","img/renWuImg/24.jpg","img/renWuImg/25.jpg"]
+   var tp=["img/renWuImg/12.jpg","img/renWuImg/5.jpg","img/renWuImg/6.jpg","img/renWuImg/15.jpg","img/renWuImg/16.jpg","img/renWuImg/21.jpg","img/renWuImg/22.jpg","img/renWuImg/23.jpg","img/renWuImg/24.jpg","img/renWuImg/25.jpg"]
+//困难的地方在于数组顺序无法快速对应
+//螺旋
 
   var c=tp.length;//获得服务器传来的数组长度
   var i=Math.ceil(c/5);//向上取整
@@ -74,45 +76,60 @@ function gundong(id){
     src5.setAttribute("src",pho[e][4]);
 }
 
-// window.onload=function(){
-//   //模拟从服务器得到视频数组
-//     var videos=new Array(['0830.mp4','造纸厂排污口巡查'],['0921.mp4','科技园西侧水渠检查'],['0922.mp4','清流河水污染治理'],['0927.html','地下水井排查']);
-                       
-//     var table=document.getElementById('table2');
-//     var cc=Math.ceil(videos.length/2); //要创建几个tr
+window.onload=function(){
+// [
+//  {"leixing":"日常"},
+//  {"start":"20616-08-12 09"},
+//  {"plan_stop":"2016-08-25 10"},
+//  {"zhuangtai":"审核通过"},
+//  {"didian":"北清路"}，
+//  {"事件":"排查污染源"},
 
-//         for(var i=0;i<cc;i++){
-//           var tr=document.createElement('tr');
-//           table.appendChild(tr); 
-//              for(var j=0;j<4;j++){
-//                 var td=document.createElement('td');
-//                 td.className='td1';
-//              }
-//          }
-
-//          var tds=document.getElementsByTagName('td');
-        
-//          var cc2=tds.length/2;
-//          for(var i=0;i<videos.length;i++){
-//                 tds[i*2].innerHTML=videos[i][0];
-//                 tds[i*2+1].innerHTML=videos[i][1];
-//          }
+// ]
 
 
-// }
+   //模拟从服务器得到任务信息
+   var dutyword = new Array('日常','2016-08-12 09','2106-08-25 10','审核通过','北清路','排查污染源');
 
- // for (var k=0;k<4;k++){    //根据数组循环创建td
- //                               for(var j=0;j<2;j++){
- //                                     var td=document.createElement('td');
- //                                     if(j==0){
- //                                         var as=document.createElement('a');
- //                                         as.innerHTML=videos[k][0];
- //                                     
- //                                         td.appendChild(as);
- //                                     }else{
- //                                        // td.innerHTML=videos[k][1];
-                                        
- //                                     }
- //                              }
- //                              tr.appendChild(td);
- //                      }
+   var spans=document.getElementById('xinxi02-xianshi').getElementsByTagName('span');
+   for(var i=0;i<6;i++){
+      spans[i].innerHTML=dutyword[i];
+   }
+
+   //模拟从服务器得到图片信息
+    var tp=["img/renWuImg/12.jpg","img/renWuImg/5.jpg","img/renWuImg/6.jpg","img/renWuImg/15.jpg","img/renWuImg/16.jpg","img/renWuImg/21.jpg","img/renWuImg/22.jpg","img/renWuImg/23.jpg","img/renWuImg/24.jpg","img/renWuImg/25.jpg"]
+    
+    var rImgs=document.getElementsByClassName('rImg');
+    for(var i=0;i<5;i++){
+      rImgs[i].src=tp[i];
+    }
+
+   //模拟从服务器得到视频数组
+  var videos=new Array(['0830.mp4','造纸厂排污口巡查','http://www.baidu.com'],['0921.mp4','科技园西侧水渠检查','http://www.baidu.com'],['0922.mp4','清流河水污染治理','http://www.baidu.com'],['0927.html','地下水井排查','http://www.baidu.com']);
+                     
+    var table=document.getElementById('table2');
+    var cc=Math.ceil(videos.length/2); //要创建几个tr
+        for(var i=0;i<cc;i++){
+          var tr=document.createElement('tr');
+          table.appendChild(tr); 
+             for(var j=0;j<4;j++){
+                var td=document.createElement('td');
+                td.className='td1';
+                tr.appendChild(td);
+             }
+         }
+
+         var tds=document.getElementsByTagName('td'); //获得所有td
+   
+         var j=0;
+         for(var i=0;i<videos.length;i++){ 
+                  var as=document.createElement('a');
+                  as.innerHTML=videos[i][0]; //添加视频名
+                  as.href=videos[i][2];        //添加视频链接  
+                  as.className='as'  ;
+               tds[j].appendChild(as);
+               tds[j+1].innerHTML=videos[i][1];//添加视频说明
+               j=j+2;
+         }
+         
+ }

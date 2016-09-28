@@ -175,6 +175,7 @@ body {
 	width: 150px;
 }
 .tc-xuanze{
+	/*padding-left: 58px;*/
 	margin-left: 36px;
 	margin-top: 20px;
 	width: 414px;
@@ -182,10 +183,11 @@ body {
 	border: 1px solid #808080;
 }
 .label-local{
-	/*display: inline-block;*/
+	display: inline-block;
 	margin-top: 20px;
 	margin-left: 30px;
 	font-weight: 400;
+	width: 68px;
 }
 .tc-qr{
 	position: absolute;
@@ -200,6 +202,7 @@ body {
 	border:0px;
 	border-radius: 2px;
 	cursor: pointer;
+	text-align: center;
 }
 .tc-gb{
 	position: absolute;
@@ -214,4 +217,13 @@ body {
 	border-radius: 2px;
 	text-align: center;
 	cursor: pointer;
+}
+.renwu_name{
+	margin-left: 22px;
+}
+.p_fasong{
+	    margin-left: 25px;
+    margin-top: 11px;
+  
+    height: 23px;
 }

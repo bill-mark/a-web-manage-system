@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+
+<p> 
+   <div class="container">
+    <label>请选择一个图像文件：</label>
+    <input type="file" id="file_input" multiple/>
+   </div>
+</p>  
+
+
+
+<script type="text/javascript">
+  var input_img =document.getElementById("file_input");
+  var result,div;
+ 
+  if(typeof FileReader==='undefined'){
+     result.innerHTML = "当前浏览器不支持此功能，请使用谷歌浏览器";
+     input_img.setAttribute('disabled','disabled');
+  }else{
+      input_img.addEventListener('change',readFile,false);  //给inpput添加change事件
+  }
+
+  //定义当图片进来时候执行的readFile函数
+  function readFile(){
+     for(var i=0;i<this.files.length;i++){
+        if(!input_img['value'].match(/.jpg|.gif|.png|.bmp/i)){
+            return alert('存在非图片文件')
+        }
+        var reader = new FileReader();
+        reader.readAsDataURL(this.file[i]);
+        reader.onload=
+     }
+  }
+</script>
+</body>
+</html>

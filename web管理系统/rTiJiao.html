@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>任务提交</title> 
+	<link rel="stylesheet" type="text/css" href="bootstrap3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap3.3.5/css/bootstrap-datetimepicker.css">
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+  <script type="text/javascript" src="bootstrap3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="bootstrap3.3.5/js/bootstrap-datetimepicker.js"></script>
+  <script type="text/javascript" src="bootstrap3.3.5/js/bootstrap-datetimepicker.zh-CN.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/rest.css">
+	<link rel="stylesheet" type="text/css" href="css/rTiJiao.css">	
+  <link rel="stylesheet" type="text/css" href="css/fenye.css">  
+  <script type="text/javascript" src="js/fenye.js"></script>
+	<script type="text/javascript" src="js/rTiJiao.js"></script>
+</head>
+<body>
+    <div class="top">
+    	任务管理 > 任务提交
+    </div>
+
+    <form id="formId">
+          <div class="mid2" id="mid2">
+              &nbsp&nbsp&nbsp&nbsp
+              日期
+              <input type="text" class="rili" name="riqi" id="datetimepicker">
+              <!-- <i class="icon-rili" onclick=""></i> -->
+              <!-- &nbsp&nbsp&nbsp&nbsp
+              队员      
+              <select class="" id="select_duiyuan" name="duiyuan">
+                  <option value="" selected="selected" disabled="disabled">-请选择-</option>
+                  <option value="01">所有队员</option>
+                  <option value="02"> 张艺兴</option>
+              </select> -->
+              <button type="button"  class="mid2-bt" id="tijiao_queren">确认</button>
+
+          </div>
+    </form>
+
+
+    <div class="xjtext" id="xjtext">
+                <table class="bottom-table">
+                    <tr>
+                      <td class="td-left">任务类型</td>
+                      <td id="leixing" class="td-right rws"></td>
+                    </tr>
+                    <tr>
+                      <td class="td-left">任务周期</td>
+                      <td id="zhouqi" class="td-right">
+                          <span id="zhouqi-start" class="rws"></span>
+                          ~
+                          <span id="zhouqi-stop" class="rws"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-left">任务地点</td>
+                      <td id="didian" class="td-right rws"></td>
+                    </tr>
+                    <tr>
+                      <td class="td-left">事件</td>
+                      <td id="shijian" class="td-right rws"></td>
+                    </tr>
+                </table>
+      <div class="buttom" onclick="tongguo()">
+          执行
+      </div>
+    </div>
+
+   <div class="mid3" id="mid3">
+       <div class="mid3-first">未执行</div>
+       <div class="mid3-right"><a href="rtjZhengZai.html">正在执行</a></div>
+       <div class="mid3-right"><a href="">已完成</a></div>
+       <div class="mid3-right"><a href="">已审核</a></div>
+   </div>
+
+    <div class="bottom" id="bottom">
+         <table class="table-xiaojia" id="table-xiaojia">
+             <tr>
+                 <th class="th1">编号</th>
+                 <th class="th2">任务名称</th>
+                 <th class="th3">操作</th>
+             </tr>
+         </table>
+    </div>
+
+     <div id="setpage">
+     </div>
+
+<script type="text/javascript" src="js/rili.js"></script>       
+</body>
+</html>

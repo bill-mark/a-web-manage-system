@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>来文录入</title>
+	<link rel="stylesheet" type="text/css" href="css/rest.css">
+	<link rel="stylesheet" type="text/css" href="css/lLuRu.css">
+    <script type="text/javascript" src="js/lLuRu.js"></script>
+	
+    <link rel="stylesheet" href="css/ssi-uploader.css"/>
+			
+</head>
+<body>
+
+       <div class="tanchuang-wrap" id="tanchuang-wrap">       
+        </div>  
+        <div class="tanchuang" id="tanchuang">
+             <div class="tc-top">
+                新增队员
+                <span class="tc-guanbi" id="tc-guanbi"></span>
+             </div> 
+             <div class="tc-zhiwei">
+                    <span class="zw-left">
+                        部门 
+                        <select class="bumen" id="bumen" onchange="xianshi()">
+                            <option value="" selected="true" disabled="disabled">--请选择--</option>
+                            <option value="00">办公室</option>
+                            <option value="01">一队</option>
+                            <option value="02">二队</option>
+                            <option value="03">三队</option>
+                        </select>
+                    </span>
+                    <span class="zw-left">
+                        职位 
+                        <select class="bumen" id="zhiwei" onchange="xianshi()">
+                            <option value="" selected="true" disabled="disabled">--请选择--</option>
+                            <option value="10">全员</option>
+                            <option value="11">队员</option>
+                            <option value="12">文职</option>
+                        </select>
+                    </span>
+             </div> 
+             <div class="tc-xuanze">
+                <form action="" method="" >
+                    <label class="label-local"><input type="checkbox" name="checkbox1" class="chk">马可可</label>
+                    <label class="label-local"><input type="checkbox" name="checkbox1" class="chk">宋可可</label>
+                    <label class="label-local"><input type="checkbox" name="checkbox1" class="chk">刘可可</label>
+                    <label class="label-local"><input type="checkbox" name="checkbox1" class="chk">赵可可</label>
+                    <br>
+                    <label class="label-local"><input type="checkbox" name="checkbox1" class="chk">王可可</label>
+                    <label class="label-local"><input type="checkbox" name="checkbox1" class="chk">牛可可</label>
+                    <label class="label-local"><input type="checkbox" name="checkbox1" class="chk">张可可</label>
+                    <label class="label-local"><input type="checkbox" name="checkbox1" class="chk">孙可可</label>
+                    <br>
+                    <input type="submit" name="submit" value="确 认" class="tc-qr">
+                    <div class="tc-gb" id="tc-guanbi2">关 闭</div>
+                </form>
+             </div>   
+        </div>
+
+
+    <div class="top">
+    	来文管理 > 来文录入
+    </div>
+    <form class="bottom">
+        <p class="p">
+            来文类型 
+            <select class="select " id="select01">
+                <option value="" selected="true" disabled="disabled">选择类型</option>
+                <option value="">类型1</option>
+                <option value="">类型2</option>
+            </select>
+
+            保密级别
+            <select class="select i" id="select02">
+                <option value="" selected="true" disabled="disabled">选择级别</option>
+                <option value="">级别1</option>
+                <option value="">级别2</option>
+            </select>
+        </p>
+        <p class="p p2">
+            来文编号
+             <input type="text" name="textnum" class="input" >              
+        </p>  
+        <p class="p pthird">
+            发送至
+            <div class="td3"  id="td3">
+                    <div class="down-name">
+                        张继科
+                        <span class="down-ic"></span>
+                    </div>
+                    <div class="down-name">
+                        马龙
+                        <span class="down-ic"></span>
+                    </div>
+                    <div class="down-tianjia" onclick="tianjia(this)">  
+                    </div>                                                                  
+            </div>
+        </p> 
+        <p class="p">
+            <span class="didian-word">标题</span>
+            <input type="" name="" class="textarea">
+        </p>
+        <p class="p">
+            <span class="didian-word">关键字</span>
+            <input type="" name="" class="guanjianzi">
+        </p>
+
+
+        <p class="p">
+             上传图片
+        	
+        </p>
+       
+
+        <p class="p-neirong">      
+           内容
+            <textarea class="textarea2"></textarea>
+        </p>
+    </form>   
+    <div class="button" onclick="queren()">
+    	确认
+    </div> 
+
+
+<div class="p-shangchuan">
+	<input type="file" multiple id="ssi-upload"/>  <!-- 上传图片插件 地址：http://www.jq22.com/jquery-info9613 -->
+</div>
+
+
+
+<script src="js/jquery-3.1.0.min.js" type="text/javascript"></script>
+<script src="js/ssi-uploader.js"></script>
+<script type="text/javascript">
+	$('#ssi-upload').ssi_uploader({url:'#',maxFileSize:6,allowed:['jpg','gif','txt','png','pdf']});
+	
+</script>
+
+</body>
+</html>

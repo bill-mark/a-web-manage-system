@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>请假</title> 
+	<link rel="stylesheet" type="text/css" href="bootstrap3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap3.3.5/css/bootstrap-datetimepicker.css">
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="bootstrap3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bootstrap3.3.5/js/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="bootstrap3.3.5/js/bootstrap-datetimepicker.zh-CN.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/rest.css">
+	<link rel="stylesheet" type="text/css" href="css/pQingJia.css">	
+</head>
+
+<body>
+    <div class="top">
+    	排版管理 > 请销假
+    </div>
+    <div class="mid">
+          <div class="mid-left">
+          	请假
+          </div>
+          <div class="mid-right">
+            &nbsp&nbsp&nbsp
+          	<a href="pXiaoJia.html">销假</a>
+          </div>
+    </div>
+    
+    <div class="bottom">
+    	<table class="bottom-table">
+    		<tr>
+    			<td class="td-left">姓名</td>
+    			<td id="name" class="td-right">张继科</td>
+    		</tr>
+            <tr>
+            	<td class="td-left">所属部门</td>
+    			<td id="bumen" class="td-right">XX部</td>
+            </tr>
+            <tr>
+            	<td class="td-left">职位</td>
+    			<td id="zhiwei" class="td-right">队员</td>
+            </tr>
+            <tr>
+            	<td class="td-left">上级</td>
+    			<td id="shangji" class="td-right">福原爱</td>
+            </tr>
+            <tr>
+            	<td class="td-left">请假时间</td>
+    			<td id="time" class="td-right line5">    			    
+    			    <input type="text" name="begin" class="dates">~<input type="text" name="stop" class="dates"> 
+    			    <i class="icon-rili" onclick=""></i>
+    			    <i class="icon-rili2" onclick=""></i>    			     
+    			</td>
+            </tr>
+            <tr>
+            	<td class="td-left tr6">备注</td>
+    			<td class="td-right">
+    				<textarea class="beizhu" id="beizhu"></textarea>
+    			</td>
+            </tr>
+    	</table>
+    </div>
+    <div class="buttom" onclick="queren()">
+    	确认
+    </div>      
+<script type="text/javascript" src="js/pQingJia.js"></script> <!-- 放在HTML文档加载之后 -->
+</body>
+</html>

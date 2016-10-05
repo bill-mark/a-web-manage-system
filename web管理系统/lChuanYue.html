@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>来文传阅</title> 
+	 <link rel="stylesheet" type="text/css" href="bootstrap3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap3.3.5/css/bootstrap-datetimepicker.css">
+  <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="bootstrap3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bootstrap3.3.5/js/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="bootstrap3.3.5/js/bootstrap-datetimepicker.zh-CN.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/rest.css">
+
+  <link rel="stylesheet" type="text/css" href="css/lChuanYue.css">  
+  <script type="text/javascript" src="js/lChuanYue.js"></script>
+</head>
+<body>
+    <div class="top">
+    	来文管理 > 来文传阅
+    </div>
+
+    <div class="mid2" id="mid2">
+        &nbsp&nbsp&nbsp&nbsp
+        来文编号
+        <select class="select_bianhao" id="">
+          <option value="" selected="selected" disabled="disabled">--请选择--</option>
+          <option value="">编号1</option>
+          <option value="">编号2</option>
+        </select>
+        
+        &nbsp&nbsp&nbsp&nbsp
+        来文类型      
+        <select class="" id="">
+          <option value="" selected="selected" disabled="disabled">--请选择--</option>
+          <option value="">类型1</option>
+          <option value=""> 类型2</option>
+        </select>
+        <button type="submit" onclick="" class="mid2-bt">确认</button>
+    </div>
+
+    <div class="xjtext" id="xjtext">
+                <table class="bottom-table">
+                    <tr>
+                      <td class="td-left">任务类型</td>
+                      <td id="leixing" class="td-right">日常</td>
+                    </tr>
+                    <tr>
+                      <td class="td-left">任务周期</td>
+                      <td id="zhouqi" class="td-right">
+                          <span id="zhouqi-start">2016-08-12 09</span>
+                          ~
+                          <span id="zhouqi-stop">2016-08-25 10</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-left">任务地点</td>
+                      <td id="didian" class="td-right">北苑路</td>
+                    </tr>
+                    <tr>
+                      <td class="td-left">事件</td>
+                      <td id="shijian" class="td-right">查看路况</td>
+                    </tr>
+                </table>
+      <div class="buttom" onclick="tongguo()">
+          执行
+      </div>
+    </div>
+
+   
+
+    <div class="bottom" id="bottom">
+         <table class="table-xiaojia" id="table-xiaojia">
+             <tr>
+                 <th class="th1">序号</th>
+                 <th class="th2">来文标题</th>
+                 <th class="th3">操作</th>
+             </tr>
+         </table>
+    </div>
+
+     <ul class="pagination diy-pag" id="pag"> 
+                <li><a href="#">&laquo;</a></li> 
+                <li><a href="#">1</a></li> 
+                <li><a href="#">2</a></li> 
+                <li><a href="#">3</a></li> 
+                <li><a href="#">4</a></li> 
+                <li><a href="#">5</a></li> 
+                <li><a href="#">&raquo;</a></li> 
+      </ul>
+     
+</body>
+</html>

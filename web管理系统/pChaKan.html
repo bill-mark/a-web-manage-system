@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>排版查看</title> 
+	<link rel="stylesheet" type="text/css" href="css/rest.css">
+	<link rel="stylesheet" type="text/css" href="css/pChaKan.css">	
+	<script type="text/javascript" src="js/pChaKan.js"></script>
+</head>
+<body>
+        <div class="tanchuang-wrap" id="tanchuang-wrap">       
+        </div>	
+        <div class="tanchuang" id="tanchuang">
+        	 <div class="tc-top">
+        	 	排班信息
+        	 	<span class="tc-guanbi" id="tc-guanbi"></span>
+        	 </div>	
+        	 <div class="tc-second">
+        	 	日期：
+        	 	<span id="tc-riqi"></span>
+        	 </div>	
+        	 <table class="tc-table" id="tc-table">
+        	 	  <tr>
+                      <th class="tc-th1">序号</th> 
+                      <th class="tc-th2">排班人员</th> 
+                      <th class="tc-th3">值班时间</th>  
+                      <th class="tc-th4">创建人</th> 
+                      <th class="tc-th5">创建职位</th>
+                  </tr>
+        	 </table>   
+        </div>
+
+
+    <div class="top">
+     		<div class="rd-top1">
+     		     当前日期：
+                 <span class="dangqian-riqi" id="dangqian-riqi"></span>
+                 <!-- <input type="text" class="input" id="">
+                 <i class="icon-rili" onclick=""></i> -->
+                 <span class="chaxun">查询日期</span>
+                 <select name="year" class="riqi-selector" id="year-selector">
+                   <option value="" selected="selected" disabled="disabled">-------年</option>              	
+                 </select>
+                 <select name="month" class="riqi-selector2" id="month-selector">
+                     <option value="" selected="selected" disabled="disabled">--月</option>
+                 </select> 
+             </div>
+             <div class="rd-top3" onclick="chaxun()">
+                 查询
+             </div>
+    </div>   
+	<table class="table-rili" id="table-rili">
+		<tr>
+		    <th>周日</th>
+			<th>周一</th>
+			<th>周二</th>
+			<th>周三</th>
+			<th>周四</th>
+			<th>周五</th>
+			<th>周六</th>   			
+		</tr>
+	</table> 
+</body>
+</html>

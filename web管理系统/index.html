@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<title></title>
+  
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+  <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+<div class="wrap-top">  
+             <span class="shuoming-ch">XXXX管理系统&nbsp&nbsp</span>
+             <span class="shuoming-eg">the XX XX XXX system</span>
+              <div class="up-shouye">
+                <div class="tuichu-img"></div>
+                <a href="">退出</a>
+              </div>
+              <div class="up-shouye">
+                <div class="shuaxin-img"></div>
+                <a href="">刷新</a>
+              </div>
+              <div class="up-shouye">
+                <div class="xiaoxi-img"></div>
+                <a href="">消息</a>
+              </div>     
+              <div class="up-shouye">
+                <div class="shouye-img"></div>
+                <a href="">首页</a>
+              </div>              
+      </div>
+  <div class="wrap"> 	     
+  		<div class="left" id="left"> 
+          <div class="left-logo">             
+              <div class="log1">
+                <img id="" class="tou-xiang1" src="img/caiDanImg/touxiang.png"> 
+              </div>            
+            <div class="log2">
+              <span id="tpromulgator">王冬冬</span>
+              <span id="tpid" style="display: none">11</span>  <!-- 管理员id -->
+              <div ></div>
+              <span id="log-zhuangtai" class="log-zhuangtai ">在线</span>
+            </div>
+          </div>           
+              <ul class="nav-ul" id="navUl">
+                <li class="li-left gaoliang" >          
+                       <div class="out-li1" id="menu1" onclick="showmenu('1')">
+                          <img src="img/caiDanImg/paiban.png" class="navimg">
+                          <span class="li-word">排班管理</span>
+                       </div> 
+                        <ul id="list1" style="display:none">
+                          <li ><div class="in-li" onclick="changeweb(this,'pAnPai')">排班安排</div></li>
+                          <li ><div class="in-li" onclick="changeweb(this,'pChaKan')">排班查看</div></li>
+                          <li ><div class="in-li" onclick="changeweb(this,'pQingJia')">请销假</div></li>
+                          <li ><div class="in-li" onclick="changeweb(this,'pShenPi')">销假审批</div></li>
+                        </ul>                  
+                </li>
+                  
+                <li class="li-left gaoliang" >                 
+                   <div class="out-li1" id="menu3" onclick="showmenu('3')">
+                    <img src="img/caiDanImg/renWu.png" class="navimg">
+                    <span class="li-word " >任务管理</span>                  
+                    
+                   </div> 
+                    <ul id="list3" style="display:none">
+                      <li ><div class="in-li" id="zhanKai" onclick="changeweb(this,'rAnPai')">任务安排</div></li>
+                      <li ><div class="in-li" onclick="changeweb(this,'rChaKan')">任务信息查看</div></li>
+                      <li ><div class="in-li" onclick="changeweb(this,'rTiJiao')">任务提交</div></li>
+                      <li ><div class="in-li" onclick="changeweb(this,'rTongJi')">任务统计</div></li>
+                      <li ><div class="in-li" onclick="changeweb(this,'rShenHe')">任务审核</div></li>
+                    </ul>                  
+                </li>
+                <li class="li-left gaoliang" >                 
+                   <div class="out-li1" id="menu4" onclick="showmenu('4')">
+                    <img src="img/caiDanImg/laiWen.png" class="navimg">
+                    <span class="li-word " >来文管理</span>                           
+                   </div> 
+                    <ul id="list4" style="display:none">
+                      <li ><div class="in-li" onclick="changeweb(this,'lLuRu')">来文录入</div></li>
+                      <li ><div class="in-li" onclick="changeweb(this,'lChuanYue')">来文传阅</div></li>
+                      <li ><div class="in-li" onclick="changeweb(this,'')">来文查询</div></li>
+                    </ul>                  
+                </li>                 
+                <li class="li-left gaoliang li-left5" >               
+                   <div class="out-li3" id="menu5" onclick="showmenu('5')">  
+                    <img src="img/caiDanImg/zhiFa.png" class="navimg">                
+                    <span class="li-word " >执法队伍</span>                      
+                   </div> 
+                    <ul id="list5" style="display:none">
+                      <li ><div class="in-li" onclick="changeweb(this,'')">队员添加</div></li>
+                      <li ><div class="in-li" onclick="changeweb(this,'')">队员信息编辑</div></li>
+                      <li ><div class="in-li" onclick="changeweb(this,'')">队伍添加</div></li>                      
+                    </ul>                  
+                </li> 
+              </ul>                      
+      </div>
+  		<div class="right" id="right">    			
+           <iframe  src="rAnPai.html" id="iframe" class="iframe" frameborder="0"></iframe>
+           <div style="clear:both"></div>			
+  		</div>  		  	
+  </div>
+</body>
+</html>
